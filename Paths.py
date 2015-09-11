@@ -20,7 +20,7 @@ for item in sets:
             except:
                 pass
             for action in actions:
-                print item + '/' +root + '/' + sub + action.name()
+                print item + '/' +root + '/' + sub + '/' + action.name()
 
 
 Canvas/Context/&Object Mode
