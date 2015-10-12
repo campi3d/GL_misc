@@ -13,8 +13,8 @@ g_buffer_depth_label = None
 g_buffer_depth = None
 g_buffer_clamp = None
 g_buffer_sync = None
-g_mirror_x = None
-g_mirror_y = None
+g_flip_x = None
+g_flip_y = None
 
 g_depth_var_dict = {'8 Bit (Byte)': mari.PaintBuffer.BufferDepth.DEPTH_BYTE ,
                     '16 Bit (Half)': mari.PaintBuffer.BufferDepth.DEPTH_HALF ,
@@ -38,8 +38,8 @@ class paintBufferToolbar(object):
         global g_buffer_depth
         global g_buffer_clamp
         global g_buffer_sync
-        global g_mirror_x
-        global g_mirror_y
+        global g_flip_x
+        global g_flip_y
 
 
         # Create Widgets
@@ -63,8 +63,8 @@ class paintBufferToolbar(object):
         g_buffer_clamp = QtGui.QCheckBox('Clamp')
         g_buffer_sync = QtGui.QCheckBox('Link Depth to Paint Target')
 
-        g_mirror_x = QtGui.QPushButton("Mirror X")
-        g_mirror_y = QtGui.QPushButton("Mirror Y")
+        g_flip_x = QtGui.QPushButton("Flip X")
+        g_flip_y = QtGui.QPushButton("Flip Y")
 
 
         # set currents for widgets from active Paintbuffer
@@ -89,8 +89,8 @@ class paintBufferToolbar(object):
         toolbar.addWidget(g_buffer_sync)
         toolbar.addSeparator()
         toolbar.addSeparator()
-        toolbar.addWidget(g_mirror_x)
-        toolbar.addWidget(g_mirror_y)
+        toolbar.addWidget(g_flip_x)
+        toolbar.addWidget(g_flip_y)
         toolbar.setLocked(True)
 
         # connect to signals so widgets change when settings are changed in Painting Palette
@@ -101,6 +101,10 @@ class paintBufferToolbar(object):
         mari.utils.connect(g_buffer_size.currentIndexChanged, lambda: self._changeBufferResolution())
         mari.utils.connect(g_buffer_depth.currentIndexChanged, lambda: self._changeBufferDepth())
         mari.utils.connect(g_buffer_clamp.stateChanged, lambda: self._changeBufferClamp())
+        mari.utils.connect(g_double_size.clicked, lambda: self._doubleRes())
+        mari.utils.connect(g_halve_size.clicked, lambda: self._halveRes())
+        mari.utils.connect(g_flip_x.clicked, lambda: self._flipX())
+        mari.utils.connect(g_flip_y.clicked, lambda: self._flipY())
 
 
 
@@ -165,6 +169,43 @@ class paintBufferToolbar(object):
         global g_paintBuffer
         checkedState = g_buffer_clamp.isChecked()
         g_paintBuffer.setClampColors(checkedState)
+
+    def _doubleRes(self):
+        ''' Doubles the Size of the paintBuffer Res'''
+        global g_paintBuffer
+        global g_buffer_size
+        cur_buffer_res = g_paintBuffer.resolution().width()
+        cur_buffer_res *= 2
+        if cur_buffer_res > 32768:
+            cur_buffer_res = 32768
+        g_buffer_size.setCurrentIndex( g_buffer_size.findText( str(cur_buffer_res) + ' x ' + str(cur_buffer_res) ) )
+
+    def _halveRes(self):
+        ''' Doubles the Size of the paintBuffer Res'''
+        global g_paintBuffer
+        global g_buffer_size
+        cur_buffer_res = g_paintBuffer.resolution().width()
+        cur_buffer_res /= 2
+        if cur_buffer_res < 256:
+            cur_buffer_res = 256
+        g_buffer_size.setCurrentIndex( g_buffer_size.findText( str(cur_buffer_res) + ' x ' + str(cur_buffer_res) ) )
+
+
+    def _flipX(self):
+        ''' Flips the Buffer horizontally'''
+        global g_paintBuffer
+        scale = g_paintBuffer.scale()
+        scale_x = g_paintBuffer.scale().width() * (-1.0)
+        scale.setWidth(scale_x)
+        g_paintBuffer.setScale(scale)
+
+    def _flipY(self):
+        ''' Flips the Buffer horizontally'''
+        global g_paintBuffer
+        scale = g_paintBuffer.scale()
+        scale_y = g_paintBuffer.scale().height() * (-1.0)
+        scale.setHeight(scale_y)
+        g_paintBuffer.setScale(scale)
 
 
 
