@@ -16,6 +16,13 @@ g_buffer_sync = None
 g_mirror_x = None
 g_mirror_y = None
 
+g_depth_var_dict = {'8 Bit (Byte)': mari.PaintBuffer.BufferDepth.DEPTH_BYTE ,
+                    '16 Bit (Half)': mari.PaintBuffer.BufferDepth.DEPTH_HALF ,
+                    '32 Bit (Float)': mari.PaintBuffer.BufferDepth.DEPTH_FLOAT
+                    }
+
+USER_ROLE = 34
+
 
 class paintBufferToolbar(object):
     "Adds new items to the TransformPaint Tool Properties Toolbar"
@@ -61,9 +68,9 @@ class paintBufferToolbar(object):
 
 
         # set currents for widgets from active Paintbuffer
-        self._setBufferResolution()
-        self._setBufferDepth()
-        self._setBufferClamp()
+        self._setBufferResolutionItem()
+        self._setBufferDepthItem()
+        self._setBufferClampItem()
 
         # Add to Toolbar
         toolbar = mari.app.findToolBar('Tool Properties')
@@ -88,13 +95,23 @@ class paintBufferToolbar(object):
 
         # connect to signals so widgets change when settings are changed in Painting Palette
         #  1 - Signals from Painting Palette to Toolbar
-        mari.utils.connect(g_paintBuffer.resolutionChanged, lambda: self._setBufferResolution())
-        mari.utils.connect(g_paintBuffer.depthChanged, lambda: self._setBufferDepth())
+        mari.utils.connect(g_paintBuffer.resolutionChanged, lambda: self._setBufferResolutionItem())
+        mari.utils.connect(g_paintBuffer.depthChanged, lambda: self._setBufferDepthItem())
         #  2 - Signals from Toolbar to Painting Palette
+        mari.utils.connect(g_buffer_size.currentIndexChanged, lambda: self._changeBufferResolution())
+        mari.utils.connect(g_buffer_depth.currentIndexChanged, lambda: self._changeBufferDepth())
+        mari.utils.connect(g_buffer_clamp.stateChanged, lambda: self._changeBufferClamp())
 
 
 
-    def _setBufferResolution(self):
+    def _checkTool(self):
+        ''' Checks if the current Tool is the right tool '''
+        if mari.tools.currentTool().name() == 'Transform Paint':
+            return True
+        else:
+            return False
+
+    def _setBufferResolutionItem(self):
         ''' Reads the current Buffer resolution and sets the Toolbar Dropdown accordingly '''
         if not self._checkTool():
             return
@@ -105,7 +122,7 @@ class paintBufferToolbar(object):
             g_buffer_size.setCurrentIndex( g_buffer_size.findText( str(cur_buffer_res) + ' x ' + str(cur_buffer_res) ) )
 
 
-    def _setBufferDepth(self):
+    def _setBufferDepthItem(self):
         ''' Reads the current Buffer depth and sets the Toolbar Dropdown accordingly '''
         if not self._checkTool():
             return
@@ -115,19 +132,40 @@ class paintBufferToolbar(object):
             cur_buffer_depth =  g_paintBuffer.depth()
             g_buffer_depth.setCurrentIndex( g_buffer_depth.findData( cur_buffer_depth))
 
-    def _setBufferClamp(self):
+    def _setBufferClampItem(self):
         ''' Reads the current Buffer clamp settings and sets the Toolbar Chckbox accordingly '''
         global g_buffer_clamp
         global g_paintBuffer
         cur_buffer_clamp = g_paintBuffer.clampColors()
         g_buffer_clamp.setChecked(cur_buffer_clamp)
 
-    def _checkTool(self):
-        ''' Checks if the current Tool is the right tool '''
-        if mari.tools.currentTool().name() == 'Transform Paint':
-            return True
-        else:
-            return False
+
+    def _changeBufferResolution(self):
+        '''Changes the Paint Buffer Resolution'''
+        global g_buffer_size
+        global g_paintBuffer
+        index = g_buffer_size.currentIndex()
+        data = g_buffer_size.itemData(index)
+        g_paintBuffer.setResolution(data)
+
+
+    def _changeBufferDepth(self):
+        '''Changes the Paint Buffer Depth'''
+        global g_buffer_depth
+        global g_paintBuffer
+        global g_depth_var_dict
+        index = g_buffer_depth.currentIndex()
+        data = g_buffer_depth.itemText(index)
+        depth = g_depth_var_dict[data]
+        g_paintBuffer.setDepth(depth)
+
+    def _changeBufferClamp(self):
+        '''Changes the Paint Buffer Clamping'''
+        global g_buffer_clamp
+        global g_paintBuffer
+        checkedState = g_buffer_clamp.isChecked()
+        g_paintBuffer.setClampColors(checkedState)
+
 
 
 bufferAction = mari.actions.get('/Mari/Tools/General/Transform Paint')
