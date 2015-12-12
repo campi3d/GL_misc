@@ -3,13 +3,13 @@
  <MriShaderNetwork Type="MriShaderNetwork">
   <objectName Type="QString"/>
   <selected Type="bool">false</selected>
-  <uuidString Type="QString">{e4b53e6b-432d-4658-b37c-368c10557e3e}</uuidString>
+  <uuidString Type="QString">{b02978c8-d30b-4be8-b3e3-4b9c90a1c2f8}</uuidString>
   <viewerNodeUuid Type="QString"/>
-  <m_nodes Size="1" attributeLinkString="{66f3b093-39d3-4990-a292-0056fe95bb66},gap_size,{2b36ad56-02f3-4637-8b3a-7b51d8fdbc7b},Float_Field,{66f3b093-39d3-4990-a292-0056fe95bb66},transition_mode,{1f380953-b45c-4a97-8059-7552e8ff2849},BlendMode,{66f3b093-39d3-4990-a292-0056fe95bb66},edge_contrast,{2847003a-af25-4228-a9aa-8c9dd4ad6c07},position,{66f3b093-39d3-4990-a292-0056fe95bb66},edge_width,{e9fa119b-5e34-400e-bddb-19d8a3ad66c8},Threshold" Type="MriSnBaseNode" ContainerType="QList">
+  <m_nodes Size="1" attributeLinkString="{ed10acda-f5d6-46b9-bdc2-765fb07aec6a},edge_width,{ca3459fb-3d7f-4ab7-98cd-10112fb1a61a},Float_0to1,{ed10acda-f5d6-46b9-bdc2-765fb07aec6a},edge_contrast,{1d153a6a-424f-4c2d-86c1-87b9bc7b43b2},position,{ed10acda-f5d6-46b9-bdc2-765fb07aec6a},Gap_size,{43fa8450-6137-44ae-94be-68e28a6bd5a1},Float_Field" Type="MriSnBaseNode" ContainerType="QList">
    <MriSnGroupNode Type="MriSnGroupNode">
     <objectName Type="QString">Edge Wear</objectName>
-    <selected Type="bool">false</selected>
-    <uuidString Type="QString">{66f3b093-39d3-4990-a292-0056fe95bb66}</uuidString>
+    <selected Type="bool">true</selected>
+    <uuidString Type="QString">{ed10acda-f5d6-46b9-bdc2-765fb07aec6a}</uuidString>
     <prefferedInput Type="QString">Curvature Map</prefferedInput>
     <preferredInput Type="QString">Curvature Map</preferredInput>
     <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -17,7 +17,7 @@
     <name Type="QString">Edge Wear</name>
     <defaultDescription Type="QString"/>
     <description Type="QString">Plug in a curvature map. Blur it for wider edge detail</description>
-    <nodeAttributes Type="QStringList">Gap Size,Gap Size,Roughness B,gap_size,edge_width,edge_contrast,transition_mode</nodeAttributes>
+    <nodeAttributes Type="QStringList">Gap Size,Gap Size,Roughness B,Gap_size,edge_contrast,edge_width</nodeAttributes>
     <tags Type="QStringList">_group,_gizmo</tags>
     <enabled Type="int">-1</enabled>
     <locked Type="bool">false</locked>
@@ -38,20 +38,19 @@
     <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
     <sharedEdges Type="QStringList"/>
     <pathKey Type="QString"/>
-    <edge_contrast TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="edge_contrast" GroupHints="1" PrettyName="edge_contrast" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.727000034530647</edge_contrast>
-    <edge_width TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.5" AttribName="edge_width" GroupHints="1" PrettyName="edge_width" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.5" Max="1">0.370000017574057</edge_width>
-    <gap_size TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="gap_size" GroupHints="1" PrettyName="gap_size" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0.01</gap_size>
-    <transition_mode TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="MriUserEnum" Reset="Comp_Default,Comp_Default,Comp_Copy,Comp_CopyRGB,Comp_Clear,Comp_Darken,Comp_Add,Comp_Multiply,Comp_ColorBurn,Comp_Lighten,Comp_Screen,Comp_ColorDodge,Comp_Overlay,Comp_SoftLight,Comp_HardLight,Comp_VividLight,Comp_PinLight,Comp_HardMix,Comp_Difference,Comp_Exclusion,Comp_Contrast,Comp_Decontrast,Comp_Hue,Comp_Saturation,Comp_Color,Comp_Luminance,Comp_BurnHighlights,Comp_BurnMidrange,Comp_BurnShadows,Comp_DodgeHighlights,Comp_DodgeMidrange,Comp_DodgeShadows,Comp_SpongeDesaturate,Comp_Invert,Comp_InverseDifference,Comp_VecDefault2d,Comp_VecAdd2d,Comp_VecDefault3d,Comp_VecAdd3d,Comp_VecScale3d,Comp_AddRGBEncodedNormals,Comp_MixRGBEncodedNormals,Comp_ReorientedNormalMappingRGBEncodedNormals,Normal,Copy,CopyRGB,Clear,Darken,Add,Multiply,Color Burn,Lighten,Screen,Color Dodge,Overlay,Soft Light,Hard Light,Vivid Light,Pin Light,Hard Mix,Difference,Exclusion,Contrast,Decontrast,Hue,Saturation,Color,Luminance,Burn Highlights,Burn Midrange,Burn Shadows,Dodge Highlights,Dodge Midrange,Dodge Shadows,Sponge Desaturate,Invert,Inverse Difference,Paint Flow Vectors,Nudge Flow Vectors,Paint Normal Vectors,Nudge Normal Vectors,Scale Vectors,Add Normal Maps,Mix Normal Maps,Mix Reoriented Normal Maps" AttribName="transition_mode" GroupHints="1" PrettyName="transition_mode" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="Comp_Default,Comp_Default,Comp_Copy,Comp_CopyRGB,Comp_Clear,Comp_Darken,Comp_Add,Comp_Multiply,Comp_ColorBurn,Comp_Lighten,Comp_Screen,Comp_ColorDodge,Comp_Overlay,Comp_SoftLight,Comp_HardLight,Comp_VividLight,Comp_PinLight,Comp_HardMix,Comp_Difference,Comp_Exclusion,Comp_Contrast,Comp_Decontrast,Comp_Hue,Comp_Saturation,Comp_Color,Comp_Luminance,Comp_BurnHighlights,Comp_BurnMidrange,Comp_BurnShadows,Comp_DodgeHighlights,Comp_DodgeMidrange,Comp_DodgeShadows,Comp_SpongeDesaturate,Comp_Invert,Comp_InverseDifference,Comp_VecDefault2d,Comp_VecAdd2d,Comp_VecDefault3d,Comp_VecAdd3d,Comp_VecScale3d,Comp_AddRGBEncodedNormals,Comp_MixRGBEncodedNormals,Comp_ReorientedNormalMappingRGBEncodedNormals,Normal,Copy,CopyRGB,Clear,Darken,Add,Multiply,Color Burn,Lighten,Screen,Color Dodge,Overlay,Soft Light,Hard Light,Vivid Light,Pin Light,Hard Mix,Difference,Exclusion,Contrast,Decontrast,Hue,Saturation,Color,Luminance,Burn Highlights,Burn Midrange,Burn Shadows,Dodge Highlights,Dodge Midrange,Dodge Shadows,Sponge Desaturate,Invert,Inverse Difference,Paint Flow Vectors,Nudge Flow Vectors,Paint Normal Vectors,Nudge Normal Vectors,Scale Vectors,Add Normal Maps,Mix Normal Maps,Mix Reoriented Normal Maps" Max="">Comp_Contrast,Comp_Default,Comp_Copy,Comp_CopyRGB,Comp_Clear,Comp_Darken,Comp_Add,Comp_Multiply,Comp_ColorBurn,Comp_Lighten,Comp_Screen,Comp_ColorDodge,Comp_Overlay,Comp_SoftLight,Comp_HardLight,Comp_VividLight,Comp_PinLight,Comp_HardMix,Comp_Difference,Comp_Exclusion,Comp_Contrast,Comp_Decontrast,Comp_Hue,Comp_Saturation,Comp_Color,Comp_Luminance,Comp_BurnHighlights,Comp_BurnMidrange,Comp_BurnShadows,Comp_DodgeHighlights,Comp_DodgeMidrange,Comp_DodgeShadows,Comp_SpongeDesaturate,Comp_Invert,Comp_InverseDifference,Comp_VecDefault2d,Comp_VecAdd2d,Comp_VecDefault3d,Comp_VecAdd3d,Comp_VecScale3d,Comp_AddRGBEncodedNormals,Comp_MixRGBEncodedNormals,Comp_ReorientedNormalMappingRGBEncodedNormals,Normal,Copy,CopyRGB,Clear,Darken,Add,Multiply,Color Burn,Lighten,Screen,Color Dodge,Overlay,Soft Light,Hard Light,Vivid Light,Pin Light,Hard Mix,Difference,Exclusion,Contrast,Decontrast,Hue,Saturation,Color,Luminance,Burn Highlights,Burn Midrange,Burn Shadows,Dodge Highlights,Dodge Midrange,Dodge Shadows,Sponge Desaturate,Invert,Inverse Difference,Paint Flow Vectors,Nudge Flow Vectors,Paint Normal Vectors,Nudge Normal Vectors,Scale Vectors,Add Normal Maps,Mix Normal Maps,Mix Reoriented Normal Maps</transition_mode>
+    <Gap_size TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="Gap_size" GroupHints="1" PrettyName="Gap_size" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0.06</Gap_size>
+    <edge_contrast TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="edge_contrast" GroupHints="1" PrettyName="edge_contrast" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.20400000968948</edge_contrast>
+    <edge_width TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="edge_width" GroupHints="1" PrettyName="edge_width" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.144000006839633</edge_width>
     <m_groupNetwork Type="MriShaderNetwork">
      <objectName Type="QString"/>
      <selected Type="bool">false</selected>
-     <uuidString Type="QString">{3e04ec74-8725-4918-977c-23b8ca4f52c1}</uuidString>
+     <uuidString Type="QString">{2ac22a1a-d4a1-4a52-a264-bd6e27c88fcd}</uuidString>
      <viewerNodeUuid Type="QString"/>
-     <m_nodes Size="30" attributeLinkString="{2847003a-af25-4228-a9aa-8c9dd4ad6c07},position,{66f3b093-39d3-4990-a292-0056fe95bb66},edge_contrast,{2b36ad56-02f3-4637-8b3a-7b51d8fdbc7b},Float_Field,{66f3b093-39d3-4990-a292-0056fe95bb66},gap_size,{1f380953-b45c-4a97-8059-7552e8ff2849},BlendMode,{66f3b093-39d3-4990-a292-0056fe95bb66},transition_mode,{e9fa119b-5e34-400e-bddb-19d8a3ad66c8},Threshold,{66f3b093-39d3-4990-a292-0056fe95bb66},edge_width" Type="MriSnBaseNode" ContainerType="QList">
+     <m_nodes Size="37" attributeLinkString="{1d153a6a-424f-4c2d-86c1-87b9bc7b43b2},position,{ed10acda-f5d6-46b9-bdc2-765fb07aec6a},edge_contrast,{43fa8450-6137-44ae-94be-68e28a6bd5a1},Float_Field,{ed10acda-f5d6-46b9-bdc2-765fb07aec6a},Gap_size,{ca3459fb-3d7f-4ab7-98cd-10112fb1a61a},Float_0to1,{ed10acda-f5d6-46b9-bdc2-765fb07aec6a},edge_width" Type="MriSnBaseNode" ContainerType="QList">
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Output</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{9a1630dd-f5ea-4477-a589-e5215556a630}</uuidString>
+       <uuidString Type="QString">{9727e786-73d1-48bd-bd16-aa7b5a930620}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -83,7 +82,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{0029b091-80d4-4293-9e4a-f46596ef13da}</uuidString>
+        <uuidString Type="QString">{20b18378-e219-4dff-8b7c-881b7f0a6cdf}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -92,7 +91,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Output</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{2a6aeda6-41e5-4ce7-a5e2-cf076d7b4fe3}</uuidString>
+         <uuidString Type="QString">{ceefb4ec-a043-4146-b6bb-a6ca31799b5c}</uuidString>
          <position Type="QPointF">559.147,371.89</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -101,7 +100,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{7d5a8ccb-bb68-42be-9da5-4c13fa791d01}</uuidString>
+        <uuidString Type="QString">{014f35c3-f5b1-4fd8-8c5f-5c9034038868}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -110,7 +109,7 @@
                 </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,1)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{2847003a-af25-4228-a9aa-8c9dd4ad6c07}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{1d153a6a-424f-4c2d-86c1-87b9bc7b43b2}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input=" " Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -119,7 +118,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Size Control</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{2b36ad56-02f3-4637-8b3a-7b51d8fdbc7b}</uuidString>
+       <uuidString Type="QString">{43fa8450-6137-44ae-94be-68e28a6bd5a1}</uuidString>
        <prefferedInput Type="QString"/>
        <preferredInput Type="QString"/>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -152,12 +151,12 @@
        <Float_0to10 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to10" GroupHints="1" PrettyName="0 - 10" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="10">0</Float_0to10>
        <Float_0to100 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to100" GroupHints="1" PrettyName="0 - 100" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="100">0</Float_0to100>
        <Float_0to1000 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1000" GroupHints="1" PrettyName="0 - 1000" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1000">0</Float_0to1000>
-       <Float_Field TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="Float_Field" GroupHints="1" PrettyName="Float" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0.01</Float_Field>
+       <Float_Field TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="Float_Field" GroupHints="1" PrettyName="Float" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0.06</Float_Field>
        <Integer TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="int" Reset="0" AttribName="Integer" GroupHints="1" PrettyName="Integer" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Integer>
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{b06fc6d6-8713-4348-8c13-360220bf7b0e}</uuidString>
+        <uuidString Type="QString">{d6276b8e-b69e-4087-b43c-2fb5fbec6130}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -166,7 +165,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Size Control</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{b43331dd-1a23-438f-893c-453242fc04b6}</uuidString>
+         <uuidString Type="QString">{fd9ea7a1-5b6b-464f-8087-3c3ca8f617be}</uuidString>
          <position Type="QPointF">-615.656,-357.869</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -175,7 +174,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{7198f3af-401c-480b-860b-0401b2225426}</uuidString>
+        <uuidString Type="QString">{1e0cf0ed-d994-48cb-ab8b-be218920bbd9}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -196,7 +195,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 51</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{ef938188-1875-49e5-b1e5-f9686831992f}</uuidString>
+       <uuidString Type="QString">{529cad7d-d08a-4d0a-9b9d-622d5bfb00f4}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -228,7 +227,7 @@
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{8d300eb4-9908-4d0d-a87b-e5a7a654738c}</uuidString>
+        <uuidString Type="QString">{97094c36-6445-4152-9697-cdfee1616c2e}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -238,7 +237,7 @@
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{9be98b7e-4e60-4ee3-b0f0-56d6e099bfac}</uuidString>
+         <uuidString Type="QString">{52e33c98-5b06-46ab-80fe-a118abda74b0}</uuidString>
          <position Type="QPointF">1067.24,-414.635</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -247,7 +246,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{8d10fdea-a93f-451c-a284-de7e94e657ba}</uuidString>
+        <uuidString Type="QString">{bb6d8cbb-90b0-44d2-9d42-e9eb44dbcdd4}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -256,7 +255,7 @@
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{2deee9d9-c591-4d0e-b5b1-ed0277be4ed0}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{5eaddc63-0860-49ef-bd97-7f7f7dbac0c2}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -265,7 +264,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 50</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{c7fc6f89-e841-4845-89a9-e909ff7ab7e2}</uuidString>
+       <uuidString Type="QString">{c3a82cfd-7662-4d36-a7c0-bb2562b32798}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -297,7 +296,7 @@
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{f64d4a67-4574-4475-b523-aed4fc6af72c}</uuidString>
+        <uuidString Type="QString">{dd71771c-4ea2-465e-b026-31fd660a65dc}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -307,7 +306,7 @@
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{4e64f829-72f9-40af-8a84-9129bfc99725}</uuidString>
+         <uuidString Type="QString">{903dab6e-ca03-490b-b046-58e552d660e0}</uuidString>
          <position Type="QPointF">1050.79,-887.002</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -316,7 +315,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{91e82929-d3db-4fcf-8a68-85151f471a6a}</uuidString>
+        <uuidString Type="QString">{6bafe916-2674-4225-b012-12e71a1b9860}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -325,7 +324,7 @@
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{e9fa119b-5e34-400e-bddb-19d8a3ad66c8}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{03b6bffd-9ea0-42bf-9931-e59dd39b83cc}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -334,7 +333,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 49</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{b6683773-88a0-46b8-ba74-92574c0387c8}</uuidString>
+       <uuidString Type="QString">{352dfc1a-c2cd-42f3-92af-20ae6ea8b9ed}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -366,7 +365,7 @@
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{97a8d6d0-4d9b-40bc-9b57-a99ac119d014}</uuidString>
+        <uuidString Type="QString">{280f0fcc-38c6-437f-b3a6-8b529fb1d1bc}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -376,7 +375,7 @@
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{45a22c25-82a5-4e87-a613-7b312c1eb4e0}</uuidString>
+         <uuidString Type="QString">{2cb56667-f885-4a88-ba1a-eb9d195fcf0b}</uuidString>
          <position Type="QPointF">777.491,-883.135</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -385,7 +384,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{16f64ee4-89a2-4bb2-abb5-5b4e483311cc}</uuidString>
+        <uuidString Type="QString">{5beac03e-6ec8-43a4-b98e-229a9666f3fd}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -394,7 +393,7 @@
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{c7fc6f89-e841-4845-89a9-e909ff7ab7e2}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{c3a82cfd-7662-4d36-a7c0-bb2562b32798}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -403,7 +402,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{6ef0c9b7-09d2-4106-a020-10f76e383435}</uuidString>
+       <uuidString Type="QString">{bc8d3480-2b45-44d4-b7ed-f20eadf06de3}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -435,7 +434,7 @@
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{c6a93a8b-3b3d-4322-9b2f-8f7d204cff1a}</uuidString>
+        <uuidString Type="QString">{645d6c8b-839e-43f2-93ae-8387a7627531}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -445,7 +444,7 @@
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{13b3ea30-badc-47f4-829d-7f57655cadbc}</uuidString>
+         <uuidString Type="QString">{008953be-78cc-4e58-96d3-b4e9bd78f3f8}</uuidString>
          <position Type="QPointF">955.705,-414.002</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -454,7 +453,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{ab0c63e7-c3e3-4170-857c-8ca31b13ef63}</uuidString>
+        <uuidString Type="QString">{00f274ab-c2bf-4c51-9491-dc7a6ce4b581}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -463,21 +462,21 @@
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{ef938188-1875-49e5-b1e5-f9686831992f}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{529cad7d-d08a-4d0a-9b9d-622d5bfb00f4}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
        <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
       </MriSnBaseNode>
       <MriSnBaseNode Type="MriSnBaseNode">
-       <objectName Type="QString">Histogram Scan 6</objectName>
+       <objectName Type="QString">Edge Contrast</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{2847003a-af25-4228-a9aa-8c9dd4ad6c07}</uuidString>
+       <uuidString Type="QString">{1d153a6a-424f-4c2d-86c1-87b9bc7b43b2}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
        <defaultName Type="QString">Unnamed</defaultName>
-       <name Type="QString">Histogram Scan 6</name>
+       <name Type="QString">Edge Contrast</name>
        <defaultDescription Type="QString"/>
        <description Type="QString"/>
        <nodeAttributes Type="QStringList">/position,/contrast,/invertPosition,/clamp</nodeAttributes>
@@ -502,23 +501,23 @@
        <sharedEdges Type="QStringList"/>
        <pathKey Type="QString"/>
        <clamp TypeFlags="0" Enabled="true" Visible="true" Min="true" Saved="true" Tweakable="true" Undoable="true" Type="bool" Reset="false" AttribName="clamp" GroupHints="1" PrettyName="Clamp" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="false" Max="false">false</clamp>
-       <contrast TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="contrast" GroupHints="1" PrettyName="Contrast" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0</contrast>
+       <contrast TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="contrast" GroupHints="1" PrettyName="Contrast" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.10200000484474</contrast>
        <invertPosition TypeFlags="0" Enabled="true" Visible="true" Min="true" Saved="true" Tweakable="true" Undoable="true" Type="bool" Reset="false" AttribName="invertPosition" GroupHints="1" PrettyName="Invert Position" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="false" Max="false">false</invertPosition>
-       <position TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="position" GroupHints="1" PrettyName="Position" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.727000034530647</position>
+       <position TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="position" GroupHints="1" PrettyName="Position" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.20400000968948</position>
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{37033b20-7fc6-4917-97d2-6ddab3a66632}</uuidString>
+        <uuidString Type="QString">{d2aa1870-9470-44d3-b0bb-a248818bb869}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
         <nodeColorTop Type="QString"/>
         <nodeColorBottom Type="QString"/>
         <m_GuiNode Type="MriNgTextNode">
-         <objectName Type="QString">Histogram Scan 6</objectName>
+         <objectName Type="QString">Edge Contrast</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{d3bbe710-f4b1-43ae-aa76-42016f14c825}</uuidString>
-         <position Type="QPointF">542.822,-186.389</position>
+         <uuidString Type="QString">{97d54b88-bc58-497d-9b3d-7048c2c3da37}</uuidString>
+         <position Type="QPointF">544.809,-184.402</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="3" map0="Input:0,0,0,-50" Type="QString" map1="Position:0,0,-120,0" map2="Contrast:0,0,120,0" ContainerType="QHash"/>
         <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -526,7 +525,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{bd75dec3-576d-4ae6-b436-a4586be265f7}</uuidString>
+        <uuidString Type="QString">{8cbe27ac-d576-4d72-af23-5786b6456667}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -577,7 +576,7 @@
             </Expression>
         <m_defaultInputMap Size="3" map0="Contrast:0:vec4($contrast,$contrast,$contrast,1.0)" Type="QString" map1="Input:0:vec4(1,1,1,1)" map2="Position:0:vec4($position,$position,$position,1.0)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="3" map0="Input:{1f380953-b45c-4a97-8059-7552e8ff2849}:Output" Type="QString" map1="Position::Output" map2="Contrast::Output" ContainerType="QHash"/>
+       <m_input2node Size="3" map0="Input:{521de6ae-7a11-41ce-b52d-84464b2a49b3}:Output" Type="QString" map1="Position::Output" map2="Contrast::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -586,7 +585,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Perlin</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{026c7623-c959-490f-80ac-3803a06cf741}</uuidString>
+       <uuidString Type="QString">{5566d1ab-efc2-4a98-8249-dbc1ee30613a}</uuidString>
        <prefferedInput Type="QString">Position</prefferedInput>
        <preferredInput Type="QString">Position</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -621,7 +620,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{209d503a-043c-42a2-b374-d3eeb62fdc00}</uuidString>
+        <uuidString Type="QString">{8d76de04-1286-428f-a55f-2c3d49eb8d2a}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -630,7 +629,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Perlin</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{25a61ce8-29a4-4a88-8301-a6e519a15233}</uuidString>
+         <uuidString Type="QString">{96e69203-4252-4cab-8a7e-06a4458ebb4c}</uuidString>
          <position Type="QPointF">400.642,-748.726</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -639,10 +638,10 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{077e77ec-dbb9-4cfc-9f26-edceaeb36fdc}</uuidString>
+        <uuidString Type="QString">{76d19a9a-ef78-4e2b-8426-2f4945b9e06e}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
     vec3 seed = #Position.xyz;
     float size_pow = (pow(10000.0,$Size*$Size)-1.0) + 0.0001;
@@ -656,7 +655,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{6568d65a-5856-4103-8996-5d475b360b35}</uuidString>
+        <uuidString Type="QString">{776dd549-95d1-4602-92d0-6c01375ded7b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -673,10 +672,10 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{0be872fd-ed8b-4c88-9dda-2797690fbc82}</uuidString>
+        <uuidString Type="QString">{8ba2f179-0380-4855-8764-766fa40768ff}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
     vec3 seed = #Position.xyz;
     float size_pow = (pow(10000.0,$Size*$Size)-1.0) + 0.0001;
@@ -687,7 +686,7 @@
                 </Expression>
         <m_defaultInputMap Size="2" map0="Position:35632:State.Position" Type="QString" map1="Position:36487:State.Position" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Position:{15b6e670-a257-4bef-a52b-a309199acdb3}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Position:{b1c1cd88-5dc1-404c-a388-e9c66b82f02c}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -696,7 +695,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Histogram Scan</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{2deee9d9-c591-4d0e-b5b1-ed0277be4ed0}</uuidString>
+       <uuidString Type="QString">{5eaddc63-0860-49ef-bd97-7f7f7dbac0c2}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -732,7 +731,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{69e1fa0d-a5cb-4f6e-904d-cc5066c70a5e}</uuidString>
+        <uuidString Type="QString">{4fa0dc9b-48d0-4ef7-8c5a-84d21fc5fa99}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -741,7 +740,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Histogram Scan</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{2c6b7f23-4392-4884-981f-2620808b82c1}</uuidString>
+         <uuidString Type="QString">{4ff34567-cec9-43fa-8e16-e86dd47d6a8b}</uuidString>
          <position Type="QPointF">991.242,-504.752</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="3" map0="Input:0,0,0,-50" Type="QString" map1="Position:0,0,-120,0" map2="Contrast:0,0,120,0" ContainerType="QHash"/>
@@ -750,7 +749,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{8f4476b3-929f-46a0-8815-245fa20e2cea}</uuidString>
+        <uuidString Type="QString">{14faa606-09e1-46a4-9edf-bf9851bb76c5}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -801,7 +800,7 @@
             </Expression>
         <m_defaultInputMap Size="3" map0="Contrast:0:vec4($contrast,$contrast,$contrast,1.0)" Type="QString" map1="Input:0:vec4(1,1,1,1)" map2="Position:0:vec4($position,$position,$position,1.0)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="3" map0="Input:{de93ce37-c089-4a73-8f9d-e6b0b236917e}:Output" Type="QString" map1="Position::Output" map2="Contrast::Output" ContainerType="QHash"/>
+       <m_input2node Size="3" map0="Input:{9efc991b-62a6-46a3-af0a-84e9dc07d0a8}:Output" Type="QString" map1="Position::Output" map2="Contrast::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -810,7 +809,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Histogram Scan 5</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{42471b6e-ad98-47c1-b2a6-89a87512df12}</uuidString>
+       <uuidString Type="QString">{015c58e4-3ad0-4009-b565-5de96ac82c3a}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -846,7 +845,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{d8b37cb4-e883-424f-866b-e08500954819}</uuidString>
+        <uuidString Type="QString">{b5145f2a-dab4-443a-b545-f4d9f989467c}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -855,7 +854,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Histogram Scan 5</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{e9fcdbf1-068e-4d34-a5c2-9556a23f1af9}</uuidString>
+         <uuidString Type="QString">{0305dbf5-5983-496a-9b0f-3840352959b5}</uuidString>
          <position Type="QPointF">695.589,-751.024</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="3" map0="Input:0,0,0,-50" Type="QString" map1="Position:0,0,-120,0" map2="Contrast:0,0,120,0" ContainerType="QHash"/>
@@ -864,7 +863,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{99982adf-1985-4e68-b657-37f5706c3954}</uuidString>
+        <uuidString Type="QString">{d4ac363e-ddfd-4340-be70-947b091a3d33}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -915,7 +914,7 @@
             </Expression>
         <m_defaultInputMap Size="3" map0="Contrast:0:vec4($contrast,$contrast,$contrast,1.0)" Type="QString" map1="Input:0:vec4(1,1,1,1)" map2="Position:0:vec4($position,$position,$position,1.0)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="3" map0="Input:{b6683773-88a0-46b8-ba74-92574c0387c8}:Output" Type="QString" map1="Position:{026c7623-c959-490f-80ac-3803a06cf741}:Output" map2="Contrast::Output" ContainerType="QHash"/>
+       <m_input2node Size="3" map0="Input:{352dfc1a-c2cd-42f3-92af-20ae6ea8b9ed}:Output" Type="QString" map1="Position:{5566d1ab-efc2-4a98-8249-dbc1ee30613a}:Output" map2="Contrast::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -924,7 +923,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Multiply</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{2cf373a1-5f01-4e9c-942a-56f462566b20}</uuidString>
+       <uuidString Type="QString">{a079536f-4a19-4c7a-8062-fc2d8620c44b}</uuidString>
        <prefferedInput Type="QString">A</prefferedInput>
        <preferredInput Type="QString">A</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -960,7 +959,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{639acf3b-14e0-4166-9438-9abf0c64e76d}</uuidString>
+        <uuidString Type="QString">{44730075-5785-44b3-b59e-6b416201dd81}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -969,7 +968,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Multiply</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{b4611aef-3eb8-4243-b02f-a2b0ed0300a3}</uuidString>
+         <uuidString Type="QString">{bcbe71b1-2b9a-4a6b-8d54-4d1706aa7b8f}</uuidString>
          <position Type="QPointF">754.678,51.8015</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -978,7 +977,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{74edbc1c-b316-40a9-81c5-2da67fbf8911}</uuidString>
+        <uuidString Type="QString">{fa56e9b2-fc9e-4918-a466-cd0ad1316081}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -988,7 +987,7 @@
                 </Expression>
         <m_defaultInputMap Size="2" map0="A:0:vec4(1,1,1,1)" Type="QString" map1="B:0:vec4(1,1,1,1)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="2" map0="A:{42471b6e-ad98-47c1-b2a6-89a87512df12}:Output" Type="QString" map1="B:{1341100b-5b3a-439e-a266-e37bbf66d897}:Output" ContainerType="QHash"/>
+       <m_input2node Size="2" map0="A:{015c58e4-3ad0-4009-b565-5de96ac82c3a}:Output" Type="QString" map1="B:{a2dbf9d9-9f52-4e14-bca5-b6335a60254e}:Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -997,7 +996,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Add</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{e9b4b560-4abd-45ee-9f70-a9cbe4a71e35}</uuidString>
+       <uuidString Type="QString">{f5edcb25-c82f-46bc-8558-1b946431a154}</uuidString>
        <prefferedInput Type="QString">A</prefferedInput>
        <preferredInput Type="QString">A</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -1033,7 +1032,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{25830f51-79c5-4eba-91b6-561623d47c32}</uuidString>
+        <uuidString Type="QString">{72b2e540-2b2b-4b24-9a2c-10a38a00f5bb}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1042,7 +1041,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Add</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{40114636-500c-494b-8a73-6fbb67d30d91}</uuidString>
+         <uuidString Type="QString">{c13ff22a-a097-43d2-8226-f8774c197bf1}</uuidString>
          <position Type="QPointF">227.491,65.4652</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -1051,7 +1050,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{540a1efb-2f98-4201-9ca9-ee08cca22ecb}</uuidString>
+        <uuidString Type="QString">{db4501a7-f930-4adb-ab14-723a2672f6b3}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -1061,7 +1060,7 @@
                 </Expression>
         <m_defaultInputMap Size="2" map0="A:0:vec4(0,0,0,1)" Type="QString" map1="B:0:vec4(0,0,0,1)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="2" map0="A:{8c75d316-2264-4d70-9adc-955722f331cf}:Output" Type="QString" map1="B:{2cf373a1-5f01-4e9c-942a-56f462566b20}:Output" ContainerType="QHash"/>
+       <m_input2node Size="2" map0="A:{03549472-4df4-4787-b758-f6b4f58a2094}:Output" Type="QString" map1="B:{a079536f-4a19-4c7a-8062-fc2d8620c44b}:Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -1070,7 +1069,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Cloud 5</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{ff7cf692-698c-4c7b-b2b8-ae5c2fd444e5}</uuidString>
+       <uuidString Type="QString">{7b4ae320-1cf3-4708-8e84-8a92e39facad}</uuidString>
        <prefferedInput Type="QString">Position</prefferedInput>
        <preferredInput Type="QString">Position</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -1109,7 +1108,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{a0fe7392-1e37-41e5-a56e-14b832f95ec8}</uuidString>
+        <uuidString Type="QString">{6b287fdd-6827-43ca-b262-5919e18b65f1}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1118,7 +1117,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Cloud 5</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{ca222dd6-a24e-4816-a7c8-fa502e004bb7}</uuidString>
+         <uuidString Type="QString">{0533ea8d-16c8-47d1-847d-e1a4fcf5a27a}</uuidString>
          <position Type="QPointF">-30.9046,-284.636</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -1127,10 +1126,10 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{fa63546d-b440-485a-bc82-acc289fc4b7a}</uuidString>
+        <uuidString Type="QString">{4c729f2a-ac91-470d-855e-105c914120e9}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
     float size = $Size;
     float roughness = $Roughness;
@@ -1151,7 +1150,7 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{9cbb50af-920b-4f39-871e-25a94dde0090}</uuidString>
+        <uuidString Type="QString">{183984cf-8d5f-4df4-9c62-cf0eb9d89ef4}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -1175,10 +1174,10 @@
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{c545bc31-e82c-4439-b14a-4777f062f5e3}</uuidString>
+        <uuidString Type="QString">{ce90c596-686e-4032-a017-d1f5b7e41b8d}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
     float size = $Size;
     float roughness = $Roughness;
@@ -1205,7 +1204,7 @@
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Merge</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{72e5c8ab-58f2-41e6-90da-445a7d196704}</uuidString>
+       <uuidString Type="QString">{41f0cd04-a65b-4e32-ad25-fd5160d819f0}</uuidString>
        <prefferedInput Type="QString">Base</prefferedInput>
        <preferredInput Type="QString">Base</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">true</preferredInputSetAtLoadTime>
@@ -1249,7 +1248,7 @@
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{62dd4391-689b-4b89-be87-0f3d8bdfb613}</uuidString>
+        <uuidString Type="QString">{c4525d22-ea06-48d6-894d-cedb513da4b8}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1258,7 +1257,7 @@
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Merge</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{9384e2c2-a7ab-4e0b-be1b-94a20e5c2be0}</uuidString>
+         <uuidString Type="QString">{af3fa453-4240-44d8-9148-4fbb031bcf0f}</uuidString>
          <position Type="QPointF">978.675,-1182.01</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -1267,7 +1266,7 @@
        <ModoRender Type="MriSnStandardContext">
         <objectName Type="QString">ModoRender</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{5842a980-74b8-4a38-b32f-710532b7427b}</uuidString>
+        <uuidString Type="QString">{59bc4056-bcae-4271-9316-e24e66d7452e}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <supportedAttributes Type="QStringList"/>
@@ -1443,7 +1442,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{276c9953-bb1e-4170-b593-7ed3a99e74df}</uuidString>
+        <uuidString Type="QString">{1d248407-7064-4879-853a-1932a0397214}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -1498,7 +1497,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="1" map0="Mask:0:vec4(1,1,1,1)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="3" map0="Base:{dafd8859-9911-438f-9016-90a816ada13a}:Output" Type="QString" map1="Over::Output" map2="Mask::Output" ContainerType="QHash"/>
+       <m_input2node Size="3" map0="Base:{238c674d-1333-4f2a-b14c-6cfbb5f48a24}:Output" Type="QString" map1="Over::Output" map2="Mask::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -1507,7 +1506,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Manifold 3D</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{a06a0fb9-d162-47c7-aa37-d342d3b783b8}</uuidString>
+       <uuidString Type="QString">{44378eb7-b20b-48a7-ab67-6d07b9ed01c1}</uuidString>
        <prefferedInput Type="QString">Coordinates</prefferedInput>
        <preferredInput Type="QString">Coordinates</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -1549,7 +1548,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{c6994440-c6b8-4fdb-8043-d37e9204c33f}</uuidString>
+        <uuidString Type="QString">{9edefedf-40dd-4816-8ef8-2edc5a589f07}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1558,7 +1557,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Manifold 3D</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{f46ae61b-2cf3-4876-b5c1-a307920cf9a6}</uuidString>
+         <uuidString Type="QString">{f57e538a-cbe4-4c13-80a0-55a80cc2b7ba}</uuidString>
          <position Type="QPointF">227.586,-137.883</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="4" map0="Scale:0,0,-100,30" Type="QString" map1="Coordinates:0,0,0,-50" map2="Rotate:0,0,-100,0" map3="Translate:0,0,-100,-30" ContainerType="QHash"/>
@@ -1567,10 +1566,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{1ebfcb99-011a-4850-87d6-448d4b197a7c}</uuidString>
+        <uuidString Type="QString">{3e759a68-eca9-4e5b-af8c-0b625be2141e}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     // Initialize Sliders
@@ -1587,7 +1586,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{02f594e9-2fdf-45c8-8299-af93a22c5e2f}</uuidString>
+        <uuidString Type="QString">{88f212fe-1405-42d3-bd42-c21cea4eb13b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -1607,10 +1606,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{2730b8b8-1a53-4909-a494-8e95e4a1c555}</uuidString>
+        <uuidString Type="QString">{e2cf781a-4f62-4d1e-8e5b-a9d77c0fb1af}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     // Initialize Sliders
@@ -1624,7 +1623,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="8" map0="Coordinates:35632:vec4(State.Position,1.0)" Type="QString" map1="Rotate:35632:vec4($rotateX,$rotateY,$rotateZ,1.0)" map2="Scale:35632:vec4( vec3($scaleX,$scaleY,$scaleZ) * vec3($WorldScale),1.0)" map3="Translate:35632:vec4($transX,$transY,$transZ,1.0)" ContainerType="QHash" map4="Coordinates:36487:vec4(State.Position,1.0)" map5="Rotate:36487:vec4($rotateX,$rotateY,$rotateZ,1.0)" map6="Scale:36487:vec4( vec3($scaleX,$scaleY,$scaleZ) * vec3($WorldScale),1.0)" map7="Translate:36487:vec4($transX,$transY,$transZ,1.0)"/>
        </GLSL>
-       <m_input2node Size="4" map0="Coordinates:{e9b4b560-4abd-45ee-9f70-a9cbe4a71e35}:Output" Type="QString" map1="Scale::Output" map2="Rotate::Output" map3="Translate::Output" ContainerType="QHash"/>
+       <m_input2node Size="4" map0="Coordinates:{f5edcb25-c82f-46bc-8558-1b946431a154}:Output" Type="QString" map1="Scale::Output" map2="Rotate::Output" map3="Translate::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Type="QString" ContainerType="QHash" Coordinates="3D Coordinates"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -1633,7 +1632,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Invert</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{56c37e30-62fa-4518-acf8-8e6436f8896a}</uuidString>
+       <uuidString Type="QString">{8ed66373-5d27-41e0-b290-627f27ae4a0c}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -1669,7 +1668,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{da393ef2-c25d-4e33-a6a5-41042dbf51f1}</uuidString>
+        <uuidString Type="QString">{99e16e6a-017e-4a17-9224-a13916839ba1}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1678,7 +1677,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Invert</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{a32dbcc6-1af2-405d-8a22-7714b1541c25}</uuidString>
+         <uuidString Type="QString">{14bf34d8-5cfd-46ad-a6a4-4a70aa50d30f}</uuidString>
          <position Type="QPointF">548.166,-603.832</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -1687,7 +1686,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{e8672aec-cf89-4e93-928b-bb0a227e9499}</uuidString>
+        <uuidString Type="QString">{3764f206-c506-413e-b3fa-0b31dc96f792}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -1700,7 +1699,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
             </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(1,1,1,1)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{ee4c34b0-81d4-466c-9535-b4e0a91d3851}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{db6019bf-6e5e-418f-90f7-7d2085351a9d}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input=" " Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -1709,7 +1708,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Cloud</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{d23d918d-2fb9-489b-907c-6f21d81d02dd}</uuidString>
+       <uuidString Type="QString">{1b0ee05e-6f8d-48d2-9a0a-123079d77bcd}</uuidString>
        <prefferedInput Type="QString">Position</prefferedInput>
        <preferredInput Type="QString">Position</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -1748,7 +1747,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{26b09d28-1be4-4795-ab58-1a79ac34bd02}</uuidString>
+        <uuidString Type="QString">{751377dd-b5af-408e-8b06-f87a20a788ef}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1757,7 +1756,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Cloud</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{d9d34e6a-0fb5-4463-a36f-6ddd502670c3}</uuidString>
+         <uuidString Type="QString">{2a5154ea-9942-4ac4-a530-5ca2fd531bdc}</uuidString>
          <position Type="QPointF">227.884,-347.032</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -1766,10 +1765,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{c54d5c96-e791-4713-a74b-b6e72513a13c}</uuidString>
+        <uuidString Type="QString">{a3b55a5a-88d4-4c14-9ccf-7366f7ff3bd5}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
     float size = $Size;
     float roughness = $Roughness;
@@ -1790,7 +1789,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{3130cd27-baec-400a-852d-1b9be2da126f}</uuidString>
+        <uuidString Type="QString">{8f3f6f68-9e62-45b8-a6fd-73d80f41315b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -1814,10 +1813,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{a8af3864-6d32-40d1-a89d-3bfd196128f1}</uuidString>
+        <uuidString Type="QString">{4f13cde2-d24b-46a2-a99a-008769aaab26}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
     float size = $Size;
     float roughness = $Roughness;
@@ -1835,7 +1834,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="2" map0="Position:35632:State.Position" Type="QString" map1="Position:36487:State.Position" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Position:{a06a0fb9-d162-47c7-aa37-d342d3b783b8}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Position:{44378eb7-b20b-48a7-ab67-6d07b9ed01c1}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -1843,8 +1842,8 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       </MriSnBaseNode>
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Transition</objectName>
-       <selected Type="bool">true</selected>
-       <uuidString Type="QString">{1f380953-b45c-4a97-8059-7552e8ff2849}</uuidString>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{521de6ae-7a11-41ce-b52d-84464b2a49b3}</uuidString>
        <prefferedInput Type="QString">A</prefferedInput>
        <preferredInput Type="QString">A</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -1874,12 +1873,12 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <sharedEdges Type="QStringList"/>
        <pathKey Type="QString"/>
        <BlendMode TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="MriUserEnum" Reset="Comp_Default,Comp_Default,Comp_Copy,Comp_CopyRGB,Comp_Clear,Comp_Darken,Comp_Add,Comp_Multiply,Comp_ColorBurn,Comp_Lighten,Comp_Screen,Comp_ColorDodge,Comp_Overlay,Comp_SoftLight,Comp_HardLight,Comp_VividLight,Comp_PinLight,Comp_HardMix,Comp_Difference,Comp_Exclusion,Comp_Contrast,Comp_Decontrast,Comp_Hue,Comp_Saturation,Comp_Color,Comp_Luminance,Comp_BurnHighlights,Comp_BurnMidrange,Comp_BurnShadows,Comp_DodgeHighlights,Comp_DodgeMidrange,Comp_DodgeShadows,Comp_SpongeDesaturate,Comp_Invert,Comp_InverseDifference,Comp_VecDefault2d,Comp_VecAdd2d,Comp_VecDefault3d,Comp_VecAdd3d,Comp_VecScale3d,Comp_AddRGBEncodedNormals,Comp_MixRGBEncodedNormals,Comp_ReorientedNormalMappingRGBEncodedNormals,Normal,Copy,CopyRGB,Clear,Darken,Add,Multiply,Color Burn,Lighten,Screen,Color Dodge,Overlay,Soft Light,Hard Light,Vivid Light,Pin Light,Hard Mix,Difference,Exclusion,Contrast,Decontrast,Hue,Saturation,Color,Luminance,Burn Highlights,Burn Midrange,Burn Shadows,Dodge Highlights,Dodge Midrange,Dodge Shadows,Sponge Desaturate,Invert,Inverse Difference,Paint Flow Vectors,Nudge Flow Vectors,Paint Normal Vectors,Nudge Normal Vectors,Scale Vectors,Add Normal Maps,Mix Normal Maps,Mix Reoriented Normal Maps" AttribName="BlendMode" GroupHints="1" PrettyName="Mode" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="Comp_Default,Comp_Default,Comp_Copy,Comp_CopyRGB,Comp_Clear,Comp_Darken,Comp_Add,Comp_Multiply,Comp_ColorBurn,Comp_Lighten,Comp_Screen,Comp_ColorDodge,Comp_Overlay,Comp_SoftLight,Comp_HardLight,Comp_VividLight,Comp_PinLight,Comp_HardMix,Comp_Difference,Comp_Exclusion,Comp_Contrast,Comp_Decontrast,Comp_Hue,Comp_Saturation,Comp_Color,Comp_Luminance,Comp_BurnHighlights,Comp_BurnMidrange,Comp_BurnShadows,Comp_DodgeHighlights,Comp_DodgeMidrange,Comp_DodgeShadows,Comp_SpongeDesaturate,Comp_Invert,Comp_InverseDifference,Comp_VecDefault2d,Comp_VecAdd2d,Comp_VecDefault3d,Comp_VecAdd3d,Comp_VecScale3d,Comp_AddRGBEncodedNormals,Comp_MixRGBEncodedNormals,Comp_ReorientedNormalMappingRGBEncodedNormals,Normal,Copy,CopyRGB,Clear,Darken,Add,Multiply,Color Burn,Lighten,Screen,Color Dodge,Overlay,Soft Light,Hard Light,Vivid Light,Pin Light,Hard Mix,Difference,Exclusion,Contrast,Decontrast,Hue,Saturation,Color,Luminance,Burn Highlights,Burn Midrange,Burn Shadows,Dodge Highlights,Dodge Midrange,Dodge Shadows,Sponge Desaturate,Invert,Inverse Difference,Paint Flow Vectors,Nudge Flow Vectors,Paint Normal Vectors,Nudge Normal Vectors,Scale Vectors,Add Normal Maps,Mix Normal Maps,Mix Reoriented Normal Maps" Max="">Comp_Contrast,Comp_Default,Comp_Copy,Comp_CopyRGB,Comp_Clear,Comp_Darken,Comp_Add,Comp_Multiply,Comp_ColorBurn,Comp_Lighten,Comp_Screen,Comp_ColorDodge,Comp_Overlay,Comp_SoftLight,Comp_HardLight,Comp_VividLight,Comp_PinLight,Comp_HardMix,Comp_Difference,Comp_Exclusion,Comp_Contrast,Comp_Decontrast,Comp_Hue,Comp_Saturation,Comp_Color,Comp_Luminance,Comp_BurnHighlights,Comp_BurnMidrange,Comp_BurnShadows,Comp_DodgeHighlights,Comp_DodgeMidrange,Comp_DodgeShadows,Comp_SpongeDesaturate,Comp_Invert,Comp_InverseDifference,Comp_VecDefault2d,Comp_VecAdd2d,Comp_VecDefault3d,Comp_VecAdd3d,Comp_VecScale3d,Comp_AddRGBEncodedNormals,Comp_MixRGBEncodedNormals,Comp_ReorientedNormalMappingRGBEncodedNormals,Normal,Copy,CopyRGB,Clear,Darken,Add,Multiply,Color Burn,Lighten,Screen,Color Dodge,Overlay,Soft Light,Hard Light,Vivid Light,Pin Light,Hard Mix,Difference,Exclusion,Contrast,Decontrast,Hue,Saturation,Color,Luminance,Burn Highlights,Burn Midrange,Burn Shadows,Dodge Highlights,Dodge Midrange,Dodge Shadows,Sponge Desaturate,Invert,Inverse Difference,Paint Flow Vectors,Nudge Flow Vectors,Paint Normal Vectors,Nudge Normal Vectors,Scale Vectors,Add Normal Maps,Mix Normal Maps,Mix Reoriented Normal Maps</BlendMode>
-       <Contrast TypeFlags="0" Enabled="true" Visible="true" Min="1" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="3" AttribName="Contrast" GroupHints="1" PrettyName="Contrast B" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="3" Max="10">3.23900010634679</Contrast>
+       <Contrast TypeFlags="0" Enabled="true" Visible="true" Min="1" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="3" AttribName="Contrast" GroupHints="1" PrettyName="Contrast B" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="3" Max="10">1.94700004498009</Contrast>
        <Trans_Type TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="MriStringList" Reset="B over A by (PatternToBlack by Transition),B over A by (Transition),B over A by (Pattern),B over A by (Transition*Pattern),B over A by (WhiteToBlack),B over A by (PatternToBlack by Transition),B over A by (WhiteToPattern by Transition)" AttribName="Trans_Type" GroupHints="1" PrettyName="Transition" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="B over A by (PatternToBlack by Transition),B over A by (Transition),B over A by (Pattern),B over A by (Transition*Pattern),B over A by (WhiteToBlack),B over A by (PatternToBlack by Transition),B over A by (WhiteToPattern by Transition)" Max="">B over A by (PatternToBlack by Transition),B over A by (Transition),B over A by (Pattern),B over A by (Transition*Pattern),B over A by (WhiteToBlack),B over A by (PatternToBlack by Transition),B over A by (WhiteToPattern by Transition)</Trans_Type>
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{f606687c-46fa-4103-8841-8ef43435e1c7}</uuidString>
+        <uuidString Type="QString">{2075bcab-fff0-487e-a27a-3b4850cdb5a6}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -1887,8 +1886,8 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <nodeColorBottom Type="QString"/>
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Transition</objectName>
-         <selected Type="bool">true</selected>
-         <uuidString Type="QString">{c062a335-1fdc-4bb8-9f0f-c9c1074cbd68}</uuidString>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{805386f1-0044-4168-80f4-95fd37d559a1}</uuidString>
          <position Type="QPointF">545.856,-327.717</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="4" map0="Transition:0,0,100,-50" Type="QString" map1="Pattern:0,0,-100,-50" map2="A:0,0,-30,-50" map3="B:0,0,30,-50" ContainerType="QHash"/>
@@ -1897,10 +1896,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{f9e73ae6-dc82-4c65-9c38-b4ac94f9fae3}</uuidString>
+        <uuidString Type="QString">{a915e0e4-387a-45d1-8a9b-ccc63dd32546}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     float alpha = 0;
@@ -1944,7 +1943,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{fe63d348-822c-4836-a50b-5d4d0d80a732}</uuidString>
+        <uuidString Type="QString">{d5863303-cb53-40fd-b007-a5cd513496b8}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -1991,10 +1990,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{8a5d7b81-eccd-4cfd-9a81-3da5dc08fe0c}</uuidString>
+        <uuidString Type="QString">{2addab2a-ff6e-4c40-91e6-3215b5f2365b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     float alpha = 0;
@@ -2035,7 +2034,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="8" map0="A:35632:vec4(9999.0)" Type="QString" map1="B:35632:vec4(9999.0)" map2="Pattern:35632:vec4(0.5)" map3="Transition:35632:vec4(0.5)" ContainerType="QHash" map4="A:36487:vec4(9999.0)" map5="B:36487:vec4(9999.0)" map6="Pattern:36487:vec4(0.5)" map7="Transition:36487:vec4(0.5)"/>
        </GLSL>
-       <m_input2node Size="4" map0="A:{56c37e30-62fa-4518-acf8-8e6436f8896a}:Output" Type="QString" map1="B:{6faba8ce-37ea-4d2f-9c30-8fceee6aa65c}:Output" map2="Pattern:{d23d918d-2fb9-489b-907c-6f21d81d02dd}:Output" map3="Transition::Output" ContainerType="QHash"/>
+       <m_input2node Size="4" map0="A:{8ed66373-5d27-41e0-b290-627f27ae4a0c}:Output" Type="QString" map1="B:{2b24fe6c-47dd-4403-885a-58bf78723672}:Output" map2="Pattern:{1b0ee05e-6f8d-48d2-9a0a-123079d77bcd}:Output" map3="Transition::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2044,7 +2043,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Saturation 2</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{cd78e4a8-8ce4-4319-80a4-455e58111522}</uuidString>
+       <uuidString Type="QString">{7d74c39f-3683-4f1a-8d8e-5f0b8328bbd4}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2077,7 +2076,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{4772efd2-d77c-40ff-963a-00dfcf688551}</uuidString>
+        <uuidString Type="QString">{c1227735-9e36-4dc1-a836-96ce95697f5b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2086,7 +2085,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Saturation 2</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{beccf1c8-9dbf-4f87-8b3e-e0c61a9c7289}</uuidString>
+         <uuidString Type="QString">{fcd26366-eb08-4658-b4b1-533b0f1c1eb8}</uuidString>
          <position Type="QPointF">982.465,-1127.19</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2095,7 +2094,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{ad7e1069-921b-42cb-affe-34a1471aa4e2}</uuidString>
+        <uuidString Type="QString">{eba1f18e-12d9-464d-80dc-dfe2461d9f99}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2118,7 +2117,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
             </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(1,1,1,1)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{72e5c8ab-58f2-41e6-90da-445a7d196704}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{41f0cd04-a65b-4e32-ad25-fd5160d819f0}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input=" " Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2127,7 +2126,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Curvature Map</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{aada0b4d-5d91-416e-ad94-d6b9058bfc33}</uuidString>
+       <uuidString Type="QString">{8f5f150b-a936-490f-9d8d-32031d4d2a5e}</uuidString>
        <prefferedInput Type="QString"/>
        <preferredInput Type="QString"/>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2159,7 +2158,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{c4d43ac1-aca3-414c-a66d-ba4ffee8cac6}</uuidString>
+        <uuidString Type="QString">{96d610db-6ce9-42a0-a6ad-514843b0b1ca}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2168,7 +2167,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Curvature Map</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{95bfc046-f08d-4d96-93b4-b1c0ae705183}</uuidString>
+         <uuidString Type="QString">{b6638697-4868-4fc2-9333-3b1d745614d5}</uuidString>
          <position Type="QPointF">945.426,-1403.8</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2177,7 +2176,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{a4a15cf7-2027-4dca-a468-4935ea5edc89}</uuidString>
+        <uuidString Type="QString">{aa6be5d8-d585-433d-ba36-888a1a3168ef}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2195,7 +2194,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Manifold 3D 2</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{8c75d316-2264-4d70-9adc-955722f331cf}</uuidString>
+       <uuidString Type="QString">{03549472-4df4-4787-b758-f6b4f58a2094}</uuidString>
        <prefferedInput Type="QString">Coordinates</prefferedInput>
        <preferredInput Type="QString">Coordinates</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2237,7 +2236,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{998a0e6a-b672-4fc5-a1a2-0df3cb74c5c8}</uuidString>
+        <uuidString Type="QString">{4c42981e-8241-4f1a-9f9d-b7b3ad5ef878}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2246,7 +2245,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Manifold 3D 2</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{3fcf4b6e-c625-421d-86e7-31e6102f6e9f}</uuidString>
+         <uuidString Type="QString">{7a9e43e7-35e7-41c0-a444-8736f00992cf}</uuidString>
          <position Type="QPointF">-115.611,76.752</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="4" map0="Scale:0,0,-100,30" Type="QString" map1="Coordinates:0,0,0,-50" map2="Rotate:0,0,-100,0" map3="Translate:0,0,-100,-30" ContainerType="QHash"/>
@@ -2255,10 +2254,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{f7706e31-c9c2-4c36-824f-e0bb63e2ad61}</uuidString>
+        <uuidString Type="QString">{667fe452-dd30-4aa0-9718-37961e69d187}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     // Initialize Sliders
@@ -2275,7 +2274,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{e8ccef4a-ddeb-4a5a-b561-f642ed946adb}</uuidString>
+        <uuidString Type="QString">{fdf29846-78b4-4f69-a236-63dcbda63628}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -2295,10 +2294,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{6a8e844f-20fd-4496-82c4-3ab06049d93f}</uuidString>
+        <uuidString Type="QString">{da40f9ee-8734-46b6-9a7b-188ddd2030f5}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     // Initialize Sliders
@@ -2312,7 +2311,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="8" map0="Coordinates:35632:vec4(State.Position,1.0)" Type="QString" map1="Rotate:35632:vec4($rotateX,$rotateY,$rotateZ,1.0)" map2="Scale:35632:vec4( vec3($scaleX,$scaleY,$scaleZ) * vec3($WorldScale),1.0)" map3="Translate:35632:vec4($transX,$transY,$transZ,1.0)" ContainerType="QHash" map4="Coordinates:36487:vec4(State.Position,1.0)" map5="Rotate:36487:vec4($rotateX,$rotateY,$rotateZ,1.0)" map6="Scale:36487:vec4( vec3($scaleX,$scaleY,$scaleZ) * vec3($WorldScale),1.0)" map7="Translate:36487:vec4($transX,$transY,$transZ,1.0)"/>
        </GLSL>
-       <m_input2node Size="4" map0="Coordinates::Output" Type="QString" map1="Scale:{2b36ad56-02f3-4637-8b3a-7b51d8fdbc7b}:Output" map2="Rotate::Output" map3="Translate::Output" ContainerType="QHash"/>
+       <m_input2node Size="4" map0="Coordinates::Output" Type="QString" map1="Scale:{43fa8450-6137-44ae-94be-68e28a6bd5a1}:Output" map2="Rotate::Output" map3="Translate::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Type="QString" ContainerType="QHash" Coordinates="3D Coordinates"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2321,7 +2320,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Manifold 3D 3</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{15b6e670-a257-4bef-a52b-a309199acdb3}</uuidString>
+       <uuidString Type="QString">{b1c1cd88-5dc1-404c-a388-e9c66b82f02c}</uuidString>
        <prefferedInput Type="QString">Coordinates</prefferedInput>
        <preferredInput Type="QString">Coordinates</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2363,7 +2362,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{710aaae7-ce74-4324-ada2-fd84721ea81a}</uuidString>
+        <uuidString Type="QString">{be63fef8-eb96-4563-9f51-c53b0b1b616a}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2372,7 +2371,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Manifold 3D 3</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{488645f5-d64c-40e3-b17c-656870b241a6}</uuidString>
+         <uuidString Type="QString">{7c188735-a8b3-4324-9b57-b9d1d63aed2a}</uuidString>
          <position Type="QPointF">-237.588,-650.729</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="4" map0="Scale:0,0,-100,30" Type="QString" map1="Coordinates:0,0,0,-50" map2="Rotate:0,0,-100,0" map3="Translate:0,0,-100,-30" ContainerType="QHash"/>
@@ -2381,10 +2380,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{63924f00-2e8c-4f47-adfe-5352ac331008}</uuidString>
+        <uuidString Type="QString">{6721efdc-f272-423b-9883-b05150a01c89}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">0</shaderType>
+        <shaderType Type="uint">35632</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     // Initialize Sliders
@@ -2401,7 +2400,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{9e3c62b0-71ef-44aa-9e02-1f8f662e0f2a}</uuidString>
+        <uuidString Type="QString">{d3641871-49b0-439a-887c-749eed995c81}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">36487</shaderType>
@@ -2421,10 +2420,10 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{1f19d36d-2e0c-40b4-bc5e-0b9f7af46bd3}</uuidString>
+        <uuidString Type="QString">{d791dc6b-39fe-4fd5-8111-1d3c6dadb96c}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
-        <shaderType Type="uint">35632</shaderType>
+        <shaderType Type="uint">0</shaderType>
         <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
 
     // Initialize Sliders
@@ -2438,7 +2437,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="8" map0="Coordinates:35632:vec4(State.Position,1.0)" Type="QString" map1="Rotate:35632:vec4($rotateX,$rotateY,$rotateZ,1.0)" map2="Scale:35632:vec4( vec3($scaleX,$scaleY,$scaleZ) * vec3($WorldScale),1.0)" map3="Translate:35632:vec4($transX,$transY,$transZ,1.0)" ContainerType="QHash" map4="Coordinates:36487:vec4(State.Position,1.0)" map5="Rotate:36487:vec4($rotateX,$rotateY,$rotateZ,1.0)" map6="Scale:36487:vec4( vec3($scaleX,$scaleY,$scaleZ) * vec3($WorldScale),1.0)" map7="Translate:36487:vec4($transX,$transY,$transZ,1.0)"/>
        </GLSL>
-       <m_input2node Size="4" map0="Coordinates::Output" Type="QString" map1="Scale:{2b36ad56-02f3-4637-8b3a-7b51d8fdbc7b}:Output" map2="Rotate::Output" map3="Translate::Output" ContainerType="QHash"/>
+       <m_input2node Size="4" map0="Coordinates::Output" Type="QString" map1="Scale:{43fa8450-6137-44ae-94be-68e28a6bd5a1}:Output" map2="Rotate::Output" map3="Translate::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Type="QString" ContainerType="QHash" Coordinates="3D Coordinates"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2447,7 +2446,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">BigEdgeControl</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{e9fa119b-5e34-400e-bddb-19d8a3ad66c8}</uuidString>
+       <uuidString Type="QString">{03b6bffd-9ea0-42bf-9931-e59dd39b83cc}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">true</preferredInputSetAtLoadTime>
@@ -2476,12 +2475,12 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
        <sharedEdges Type="QStringList"/>
        <pathKey Type="QString">Filter/Custom/Histogram/Threshold</pathKey>
-       <Clip TypeFlags="0" Enabled="true" Visible="true" Min="0.001" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.001" AttribName="Clip" GroupHints="1" PrettyName="Edge" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.001" Max="1">0.760000036098063</Clip>
-       <Threshold TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.5" AttribName="Threshold" GroupHints="1" PrettyName="Threshold" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.5" Max="1">0.370000017574057</Threshold>
+       <Clip TypeFlags="0" Enabled="true" Visible="true" Min="0.001" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.001" AttribName="Clip" GroupHints="1" PrettyName="Edge" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.001" Max="1">0.473000022466294</Clip>
+       <Threshold TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.5" AttribName="Threshold" GroupHints="1" PrettyName="Threshold" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.5" Max="1">0.449000021326356</Threshold>
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{eb763398-6745-49f1-b181-08ae4b28d922}</uuidString>
+        <uuidString Type="QString">{7eddff7b-df78-41d3-889f-95400870c8a5}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2490,8 +2489,8 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">BigEdgeControl</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{57746354-535a-41ca-84a6-fbd3b9b5108e}</uuidString>
-         <position Type="QPointF">980.811,-1027.65</position>
+         <uuidString Type="QString">{14637569-e9ae-467b-b956-42c77ab6a823}</uuidString>
+         <position Type="QPointF">980.811,-1026.66</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="3" map0="Input:0,0,0,-50" Type="QString" map1="Edge:0,0,120,0" map2="Threshold:0,0,-120,0" ContainerType="QHash"/>
         <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2499,7 +2498,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{e6ed540b-ea0b-45d1-a240-69a6b3008047}</uuidString>
+        <uuidString Type="QString">{f779526e-3de1-462e-953a-f78b1c09024d}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2523,7 +2522,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="3" map0="Edge:0:vec4($Clip)" Type="QString" map1="Input:0:vec4(1,1,1,1)" map2="Threshold:0:vec4($Threshold)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="3" map0="Input:{cd78e4a8-8ce4-4319-80a4-455e58111522}:Output" Type="QString" map1="Threshold::Output" map2="Edge::Output" ContainerType="QHash"/>
+       <m_input2node Size="3" map0="Input:{7d74c39f-3683-4f1a-8d8e-5f0b8328bbd4}:Output" Type="QString" map1="Threshold:{ca3459fb-3d7f-4ab7-98cd-10112fb1a61a}:Output" map2="Edge:{836ebb3c-2073-4671-8912-4aad296836ec}:Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2531,8 +2530,8 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       </MriSnBaseNode>
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Threshold 2</objectName>
-       <selected Type="bool">false</selected>
-       <uuidString Type="QString">{250ea259-7b71-457c-b02e-6dedd046348d}</uuidString>
+       <selected Type="bool">true</selected>
+       <uuidString Type="QString">{3623c049-100b-4b09-a091-3954377c8e63}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">true</preferredInputSetAtLoadTime>
@@ -2561,12 +2560,12 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
        <sharedEdges Type="QStringList"/>
        <pathKey Type="QString">Filter/Custom/Histogram/Threshold</pathKey>
-       <Clip TypeFlags="0" Enabled="true" Visible="true" Min="0.001" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.001" AttribName="Clip" GroupHints="1" PrettyName="Edge" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.001" Max="1">0.237000011256896</Clip>
-       <Threshold TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.5" AttribName="Threshold" GroupHints="1" PrettyName="Threshold" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.5" Max="1">0.36100001714658</Threshold>
+       <Clip TypeFlags="0" Enabled="true" Visible="true" Min="0.001" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.001" AttribName="Clip" GroupHints="1" PrettyName="Edge" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.001" Max="1">0.709000033675693</Clip>
+       <Threshold TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0.5" AttribName="Threshold" GroupHints="1" PrettyName="Threshold" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0.5" Max="1">0.657000031205826</Threshold>
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{c15fdeb1-132e-4213-b591-a298ab59c7a1}</uuidString>
+        <uuidString Type="QString">{8905725b-6e7c-4916-9dfd-b81a6566ac2a}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2574,9 +2573,9 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <nodeColorBottom Type="QString"/>
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Threshold 2</objectName>
-         <selected Type="bool">false</selected>
-         <uuidString Type="QString">{63c22887-45c3-4244-a2e9-b98d9adabacb}</uuidString>
-         <position Type="QPointF">985.153,-765.475</position>
+         <selected Type="bool">true</selected>
+         <uuidString Type="QString">{36de4b84-d81f-4ed9-a9bd-250da7230b21}</uuidString>
+         <position Type="QPointF">983.166,-765.475</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="3" map0="Input:0,0,0,-50" Type="QString" map1="Edge:0,0,120,0" map2="Threshold:0,0,-120,0" ContainerType="QHash"/>
         <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2584,7 +2583,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{a3aff29a-503a-49fc-b0ee-ba4851711fc7}</uuidString>
+        <uuidString Type="QString">{970a9247-a151-4f8b-8107-d52632c1403f}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2608,7 +2607,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                 </Expression>
         <m_defaultInputMap Size="3" map0="Edge:0:vec4($Clip)" Type="QString" map1="Input:0:vec4(1,1,1,1)" map2="Threshold:0:vec4($Threshold)" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="3" map0="Input:{c7fc6f89-e841-4845-89a9-e909ff7ab7e2}:Output" Type="QString" map1="Threshold::Output" map2="Edge::Output" ContainerType="QHash"/>
+       <m_input2node Size="3" map0="Input:{c3a82cfd-7662-4d36-a7c0-bb2562b32798}:Output" Type="QString" map1="Threshold::Output" map2="Edge::Output" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2617,7 +2616,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Invert 2</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{de93ce37-c089-4a73-8f9d-e6b0b236917e}</uuidString>
+       <uuidString Type="QString">{9efc991b-62a6-46a3-af0a-84e9dc07d0a8}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2653,7 +2652,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{ef1b7831-eed7-4c0d-9a8f-ac6da894f9e9}</uuidString>
+        <uuidString Type="QString">{49215a18-9555-4311-824a-985dbe67a157}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2662,7 +2661,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Invert 2</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{bf7e23f0-0e61-4562-8f6b-8c4ab9f5d66a}</uuidString>
+         <uuidString Type="QString">{82945c0c-1aaa-4b06-9c47-126cd4f0631c}</uuidString>
          <position Type="QPointF">980.692,-675.188</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2671,7 +2670,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{20c97de6-bff0-4fd5-882d-71a6ba10a986}</uuidString>
+        <uuidString Type="QString">{40cfbf22-76ba-4eac-be6c-10816cb7f75a}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2684,7 +2683,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
             </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(1,1,1,1)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{250ea259-7b71-457c-b02e-6dedd046348d}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{3623c049-100b-4b09-a091-3954377c8e63}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input=" " Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2693,7 +2692,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 52</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{6faba8ce-37ea-4d2f-9c30-8fceee6aa65c}</uuidString>
+       <uuidString Type="QString">{2b24fe6c-47dd-4403-885a-58bf78723672}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2725,7 +2724,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{aab343cb-ea8a-41f9-833b-e82906ef8a34}</uuidString>
+        <uuidString Type="QString">{20cdbddc-6bf7-4226-bcdb-04da7897117d}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2735,7 +2734,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{2d8d7fed-1dbd-47e2-817d-9b6d8b53aa5a}</uuidString>
+         <uuidString Type="QString">{54e55a81-9db9-4d23-9c45-663cdd574ca1}</uuidString>
          <position Type="QPointF">956.161,-314.06</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2744,7 +2743,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{e9d258cd-1f4a-4010-8918-609b969f3b90}</uuidString>
+        <uuidString Type="QString">{b992714d-f436-4e25-817a-b85c6254619f}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2753,7 +2752,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{6ef0c9b7-09d2-4106-a020-10f76e383435}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{bc8d3480-2b45-44d4-b7ed-f20eadf06de3}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2762,7 +2761,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 53</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{1341100b-5b3a-439e-a266-e37bbf66d897}</uuidString>
+       <uuidString Type="QString">{a2dbf9d9-9f52-4e14-bca5-b6335a60254e}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2794,7 +2793,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{d9351587-819f-4ff2-b7d9-ce20e2523024}</uuidString>
+        <uuidString Type="QString">{d9cb2016-69b0-45c3-842b-73570efffe70}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2804,7 +2803,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{165c684f-37ac-4d55-938d-35f1e64a0282}</uuidString>
+         <uuidString Type="QString">{836beeef-5c64-40af-856a-102ae473a181}</uuidString>
          <position Type="QPointF">1075.73,58.7068</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2813,7 +2812,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{6194b5f7-6df9-4618-b870-8c2da9291ba2}</uuidString>
+        <uuidString Type="QString">{62b19879-af4b-4a76-8eae-eace5f73727b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2822,7 +2821,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{2deee9d9-c591-4d0e-b5b1-ed0277be4ed0}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{5eaddc63-0860-49ef-bd97-7f7f7dbac0c2}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2831,7 +2830,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 54</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{ee4c34b0-81d4-466c-9535-b4e0a91d3851}</uuidString>
+       <uuidString Type="QString">{db6019bf-6e5e-418f-90f7-7d2085351a9d}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2863,7 +2862,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{5707b72f-abf8-4091-90bf-62f55595f660}</uuidString>
+        <uuidString Type="QString">{f4f48da3-a04b-44a3-b850-21993fccac1b}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2873,7 +2872,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{51de6602-edff-43c2-9038-0e2ac6b1150b}</uuidString>
+         <uuidString Type="QString">{0b06a0c3-75c0-4a38-9096-1948f9cf3192}</uuidString>
          <position Type="QPointF">619.968,-674.168</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2882,7 +2881,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{7f1363ae-b11a-4832-8733-ef3eacee4627}</uuidString>
+        <uuidString Type="QString">{d0b1bd85-9381-48b8-b4c5-089a8a65f025}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2891,7 +2890,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{303a39a4-5d45-49a4-9f9c-57ffad51c234}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{6a1bb0b3-ce05-424d-8cf4-125e2ae78d18}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2900,7 +2899,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Dot 55</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{303a39a4-5d45-49a4-9f9c-57ffad51c234}</uuidString>
+       <uuidString Type="QString">{6a1bb0b3-ce05-424d-8cf4-125e2ae78d18}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -2932,7 +2931,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnUINodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{51c194e0-f9d5-4b29-9c41-473c62550ad1}</uuidString>
+        <uuidString Type="QString">{93e6e304-6599-4624-8509-8c9bd7925b35}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -2942,7 +2941,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgDotNode">
          <objectName Type="QString"/>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{43925030-b5f9-4db2-8f7e-39dc9cb25239}</uuidString>
+         <uuidString Type="QString">{955bca75-2386-4ff0-bb1d-661f25632cca}</uuidString>
          <position Type="QPointF">767.668,-669.948</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -2951,7 +2950,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{58d412c0-e752-4317-a4ef-1961b6e79e34}</uuidString>
+        <uuidString Type="QString">{802aefa0-91ec-4a61-a186-4f07b4a5c2cc}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -2960,7 +2959,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
                     </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{42471b6e-ad98-47c1-b2a6-89a87512df12}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{015c58e4-3ad0-4009-b565-5de96ac82c3a}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
@@ -2969,7 +2968,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
       <MriSnBaseNode Type="MriSnBaseNode">
        <objectName Type="QString">Levels</objectName>
        <selected Type="bool">false</selected>
-       <uuidString Type="QString">{dafd8859-9911-438f-9016-90a816ada13a}</uuidString>
+       <uuidString Type="QString">{238c674d-1333-4f2a-b14c-6cfbb5f48a24}</uuidString>
        <prefferedInput Type="QString">Input</prefferedInput>
        <preferredInput Type="QString">Input</preferredInput>
        <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
@@ -3011,7 +3010,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <NodeGraphView Type="MriSnNodeGraphViewContext">
         <objectName Type="QString">NodeGraphView</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{fd505c3d-7fdb-40b4-bde0-d0e998616c85}</uuidString>
+        <uuidString Type="QString">{28c11eb7-817e-43bd-9a25-7e9a0abda1e2}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shapeType Type="int">0</shapeType>
@@ -3020,7 +3019,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
         <m_GuiNode Type="MriNgTextNode">
          <objectName Type="QString">Levels</objectName>
          <selected Type="bool">false</selected>
-         <uuidString Type="QString">{eab4dd59-1d65-47ab-880c-09ac6511242a}</uuidString>
+         <uuidString Type="QString">{92c4347a-43ac-4f86-a69f-c195fffc18db}</uuidString>
          <position Type="QPointF">943.46,-1332.78</position>
         </m_GuiNode>
         <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -3029,7 +3028,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
        <GLSL Type="MriSnBaseGlslContext">
         <objectName Type="QString">GLSL</objectName>
         <selected Type="bool">false</selected>
-        <uuidString Type="QString">{0fda3a8f-7e2c-4869-9d2e-96a838f17829}</uuidString>
+        <uuidString Type="QString">{95f1df26-cda1-4f0a-aa57-7af58d2875c2}</uuidString>
         <tags Type="QStringList"/>
         <inputTags Type="QStringList"/>
         <shaderType Type="uint">0</shaderType>
@@ -3075,8 +3074,518 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
             </Expression>
         <m_defaultInputMap Size="1" map0="Input:0:vec4(1,1,1,1)" Type="QString" ContainerType="QHash"/>
        </GLSL>
-       <m_input2node Size="1" map0="Input:{aada0b4d-5d91-416e-ad94-d6b9058bfc33}:Output" Type="QString" ContainerType="QHash"/>
+       <m_input2node Size="1" map0="Input:{8f5f150b-a936-490f-9d8d-32031d4d2a5e}:Output" Type="QString" ContainerType="QHash"/>
        <m_PrettyInputNameMap Size="4" Input=" " Type="QString" ContainerType="QHash"/>
+       <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">EdgeWidth</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{ca3459fb-3d7f-4ab7-98cd-10112fb1a61a}</uuidString>
+       <prefferedInput Type="QString"/>
+       <preferredInput Type="QString"/>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Unnamed</defaultName>
+       <name Type="QString">EdgeWidth</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList">/Float_Field,/Integer,/Float_0to1,/Float_0to10,/Float_0to100,/Float_0to1000</nodeAttributes>
+       <tags Type="QStringList"/>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString">JK_Float</versionUUID>
+       <versionDate Type="QString">3.0.2015.1022</versionDate>
+       <versionHashCreated Type="QString">0ed6b1aa</versionHashCreated>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString">Basic/Float</pathKey>
+       <Float_0to1 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1" GroupHints="1" PrettyName="0 - 1" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0.144000006839633</Float_0to1>
+       <Float_0to10 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to10" GroupHints="1" PrettyName="0 - 10" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="10">0</Float_0to10>
+       <Float_0to100 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to100" GroupHints="1" PrettyName="0 - 100" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="100">0</Float_0to100>
+       <Float_0to1000 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1000" GroupHints="1" PrettyName="0 - 1000" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1000">0</Float_0to1000>
+       <Float_Field TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="Float_Field" GroupHints="1" PrettyName="Float" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Float_Field>
+       <Integer TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="int" Reset="0" AttribName="Integer" GroupHints="1" PrettyName="Integer" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Integer>
+       <NodeGraphView Type="MriSnNodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{63bc1f45-b2b6-4bde-ad76-e1bc4d81c15b}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <m_GuiNode Type="MriNgTextNode">
+         <objectName Type="QString">EdgeWidth</objectName>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{10bd2c22-ff99-451c-9975-0240d79c7ba9}</uuidString>
+         <position Type="QPointF">649.618,-1323.36</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{6338f7a8-8f50-4690-96d2-828fccd59526}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+
+                float OutValue = ($Float_Field + $Float_0to1 + $Float_0to10 + $Float_0to100 + $Float_0to1000 + float($Integer));
+                Output = vec4(OutValue,OutValue,OutValue,1.0);
+           
+           </Expression>
+        <m_defaultInputMap Size="0" Type="QString" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="0" Type="QString" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="0" Type="QString" ContainerType="QHash"/>
+       <m_PrettyOutputNameMap Size="1" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">Add 2</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{6faf6c85-b150-4643-9a07-6ef19976a197}</uuidString>
+       <prefferedInput Type="QString">A</prefferedInput>
+       <preferredInput Type="QString">A</preferredInput>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Unnamed</defaultName>
+       <name Type="QString">Add 2</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList">Components/R,Components/G,Components/B,Components/A</nodeAttributes>
+       <tags Type="QStringList"/>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString">MRI_Math_Add</versionUUID>
+       <versionDate Type="QString">3.0.2015.1022</versionDate>
+       <versionHashCreated Type="QString">019c44aa</versionHashCreated>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString">Math/Add</pathKey>
+       <A TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="bool" Reset="false" AttribName="A" GroupHints="1" PrettyName="A" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="false" Max="">false</A>
+       <B TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="bool" Reset="true" AttribName="B" GroupHints="1" PrettyName="B" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="true" Max="">true</B>
+       <G TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="bool" Reset="true" AttribName="G" GroupHints="1" PrettyName="G" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="true" Max="">true</G>
+       <R TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="bool" Reset="true" AttribName="R" GroupHints="1" PrettyName="R" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="true" Max="">true</R>
+       <NodeGraphView Type="MriSnNodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{f6b074ce-0805-4d9b-b4ee-6ddc314db352}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <m_GuiNode Type="MriNgTextNode">
+         <objectName Type="QString">Add 2</objectName>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{7f1bb967-1416-43d5-80d4-659ac8e9b8db}</uuidString>
+         <position Type="QPointF">718.435,-1082.75</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{cde1a2f1-dff7-4bac-bf67-cc29e9af6eca}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+    vec4 Gate = vec4(float($R),float($G),float($B),float($A)); 
+    Output = #A+#B*Gate;
+                </Expression>
+        <m_defaultInputMap Size="2" map0="A:0:vec4(0,0,0,1)" Type="QString" map1="B:0:vec4(0,0,0,1)" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="2" map0="A::Output" Type="QString" map1="B:{ca3459fb-3d7f-4ab7-98cd-10112fb1a61a}:Output" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="0" Type="QString" ContainerType="QHash"/>
+       <m_PrettyOutputNameMap Size="1" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">Float 2</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{dc3aaa4e-73f0-42ce-a0c8-d0b681d0d764}</uuidString>
+       <prefferedInput Type="QString"/>
+       <preferredInput Type="QString"/>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Unnamed</defaultName>
+       <name Type="QString">Float 2</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList">/Float_Field,/Integer,/Float_0to1,/Float_0to10,/Float_0to100,/Float_0to1000</nodeAttributes>
+       <tags Type="QStringList"/>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString">JK_Float</versionUUID>
+       <versionDate Type="QString">3.0.2015.1022</versionDate>
+       <versionHashCreated Type="QString">0ed6b1aa</versionHashCreated>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString">Basic/Float</pathKey>
+       <Float_0to1 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1" GroupHints="1" PrettyName="0 - 1" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">0</Float_0to1>
+       <Float_0to10 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to10" GroupHints="1" PrettyName="0 - 10" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="10">0</Float_0to10>
+       <Float_0to100 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to100" GroupHints="1" PrettyName="0 - 100" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="100">0</Float_0to100>
+       <Float_0to1000 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1000" GroupHints="1" PrettyName="0 - 1000" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1000">0</Float_0to1000>
+       <Float_Field TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="Float_Field" GroupHints="1" PrettyName="Float" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Float_Field>
+       <Integer TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="int" Reset="0" AttribName="Integer" GroupHints="1" PrettyName="Integer" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Integer>
+       <NodeGraphView Type="MriSnNodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{94d74c8a-1e68-42e6-81ac-9d40a0b22a67}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <m_GuiNode Type="MriNgTextNode">
+         <objectName Type="QString">Float 2</objectName>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{17bd1546-309c-43f5-a572-519f62127f66}</uuidString>
+         <position Type="QPointF">409.334,-1178.54</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{ae262c44-3be8-4886-90b9-b1d7f472135e}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+
+                float OutValue = ($Float_Field + $Float_0to1 + $Float_0to10 + $Float_0to100 + $Float_0to1000 + float($Integer));
+                Output = vec4(OutValue,OutValue,OutValue,1.0);
+           
+           </Expression>
+        <m_defaultInputMap Size="0" Type="QString" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="0" Type="QString" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="0" Type="QString" ContainerType="QHash"/>
+       <m_PrettyOutputNameMap Size="1" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">Linear</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{836ebb3c-2073-4671-8912-4aad296836ec}</uuidString>
+       <prefferedInput Type="QString">Input</prefferedInput>
+       <preferredInput Type="QString">Input</preferredInput>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Unnamed</defaultName>
+       <name Type="QString">Linear</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList"/>
+       <tags Type="QStringList"/>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString">MRI_Math_Linear</versionUUID>
+       <versionDate Type="QString">3.0.2015.1022</versionDate>
+       <versionHashCreated Type="QString">0dead72a</versionHashCreated>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString">Math/Linear</pathKey>
+       <NodeGraphView Type="MriSnNodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{674d85d0-7f07-4044-a531-de0e678de8ed}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <m_GuiNode Type="MriNgTextNode">
+         <objectName Type="QString">Linear</objectName>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{3af29a18-c566-48a6-90f9-bfa3e180d00b}</uuidString>
+         <position Type="QPointF">503.993,-1026.87</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{fcb2a715-d703-45fd-a07e-13f177c20ca7}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+    Output = ((#B - #A)*#Input + #A);
+                </Expression>
+        <m_defaultInputMap Size="3" map0="A:0:vec4(0,0,0,1)" Type="QString" map1="B:0:vec4(1,1,1,1)" map2="Input:0:vec4(0,0,0,1)" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="3" map0="Input:{36e1056d-8b24-42f0-ba67-b792200a1057}:Output" Type="QString" map1="A:{dc3aaa4e-73f0-42ce-a0c8-d0b681d0d764}:Output" map2="B:{99ce0cc1-1731-49a7-8aeb-5968d68c1834}:Output" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="3" Input="Input Color" Type="QString" ContainerType="QHash" A="New Min" B="New Max"/>
+       <m_PrettyOutputNameMap Size="1" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">Float 3</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{99ce0cc1-1731-49a7-8aeb-5968d68c1834}</uuidString>
+       <prefferedInput Type="QString"/>
+       <preferredInput Type="QString"/>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Unnamed</defaultName>
+       <name Type="QString">Float 3</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList">/Float_Field,/Integer,/Float_0to1,/Float_0to10,/Float_0to100,/Float_0to1000</nodeAttributes>
+       <tags Type="QStringList"/>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString">JK_Float</versionUUID>
+       <versionDate Type="QString">3.0.2015.1022</versionDate>
+       <versionHashCreated Type="QString">0ed6b1aa</versionHashCreated>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString"/>
+       <Float_0to1 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1" GroupHints="1" PrettyName="0 - 1" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1">2</Float_0to1>
+       <Float_0to10 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to10" GroupHints="1" PrettyName="0 - 10" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="10">1.00500004773494</Float_0to10>
+       <Float_0to100 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to100" GroupHints="1" PrettyName="0 - 100" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="100">0</Float_0to100>
+       <Float_0to1000 TypeFlags="0" Enabled="true" Visible="true" Min="0" Saved="true" Tweakable="true" Undoable="true" Type="double" Reset="0" AttribName="Float_0to1000" GroupHints="1" PrettyName="0 - 1000" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="1000">0</Float_0to1000>
+       <Float_Field TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="float" Reset="0" AttribName="Float_Field" GroupHints="1" PrettyName="Float" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Float_Field>
+       <Integer TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="int" Reset="0" AttribName="Integer" GroupHints="1" PrettyName="Integer" ItemList="" Step="" Description="" Flags="31" Removeable="true" Default="0" Max="">0</Integer>
+       <NodeGraphView Type="MriSnNodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{5bd6839a-84ac-44e2-9d4d-3dc4597534b6}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <m_GuiNode Type="MriNgTextNode">
+         <objectName Type="QString">Float 3</objectName>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{b15afeb4-61c4-4450-a079-8bf0e496c04b}</uuidString>
+         <position Type="QPointF">573.821,-1177.31</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{f427e4de-4250-4e28-9515-9e6239f56348}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+
+                float OutValue = ($Float_Field + $Float_0to1 + $Float_0to10 + $Float_0to100 + $Float_0to1000 + float($Integer));
+                Output = vec4(OutValue,OutValue,OutValue,1.0);
+           
+           </Expression>
+        <m_defaultInputMap Size="0" Type="QString" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="0" Type="QString" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="3" Type="QString" ContainerType="QHash"/>
+       <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">Dot 56</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{36e1056d-8b24-42f0-ba67-b792200a1057}</uuidString>
+       <prefferedInput Type="QString">Input</prefferedInput>
+       <preferredInput Type="QString">Input</preferredInput>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Dot</defaultName>
+       <name Type="QString">Dot 56</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList"/>
+       <tags Type="QStringList">_dot</tags>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString"/>
+       <versionDate Type="QString"/>
+       <versionHashCreated Type="QString"/>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString">Misc/Dot</pathKey>
+       <NodeGraphView Type="MriSnUINodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{edd62667-3aca-4b07-b13e-36194c45ab37}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <guiNodeClass Type="QString">Dot</guiNodeClass>
+        <m_GuiNode Type="MriNgDotNode">
+         <objectName Type="QString"/>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{d04de0f7-bd5a-46ca-9f28-17d637cee936}</uuidString>
+         <position Type="QPointF">337.448,-1000.81</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{2483d68e-4d65-48c0-b2fe-e09be974f62c}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+                    Output = #Input;
+                    </Expression>
+        <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="1" map0="Input:{a88c8e40-1613-4d0c-ab95-b5a1f44cacaf}:Output" Type="QString" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
+       <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
+       <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
+       <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
+      </MriSnBaseNode>
+      <MriSnBaseNode Type="MriSnBaseNode">
+       <objectName Type="QString">Dot 57</objectName>
+       <selected Type="bool">false</selected>
+       <uuidString Type="QString">{a88c8e40-1613-4d0c-ab95-b5a1f44cacaf}</uuidString>
+       <prefferedInput Type="QString">Input</prefferedInput>
+       <preferredInput Type="QString">Input</preferredInput>
+       <preferredInputSetAtLoadTime Type="bool">false</preferredInputSetAtLoadTime>
+       <defaultName Type="QString">Dot</defaultName>
+       <name Type="QString">Dot 57</name>
+       <defaultDescription Type="QString"/>
+       <description Type="QString"/>
+       <nodeAttributes Type="QStringList"/>
+       <tags Type="QStringList">_dot</tags>
+       <enabled Type="int">-1</enabled>
+       <locked Type="bool">false</locked>
+       <hash Type="QString"/>
+       <cachePoints Type="QStringList"/>
+       <cost Type="float">0.001</cost>
+       <costDescription Type="QString">Trivial operation</costDescription>
+       <disabledInputs Type="QStringList"/>
+       <cacheEnabled Type="bool">false</cacheEnabled>
+       <versionUUID Type="QString"/>
+       <versionDate Type="QString"/>
+       <versionHashCreated Type="QString"/>
+       <containerNodeUUID Type="QString"/>
+       <isContainerNode Type="bool">false</isContainerNode>
+       <stackContainerNodeUUID Type="QString"/>
+       <isStackContainerNode Type="bool">false</isStackContainerNode>
+       <adjustmentStackContainerNodeUUID Type="QString"/>
+       <isAdjustmentStackContainerNode Type="bool">false</isAdjustmentStackContainerNode>
+       <sharedEdges Type="QStringList"/>
+       <pathKey Type="QString">Misc/Dot</pathKey>
+       <NodeGraphView Type="MriSnUINodeGraphViewContext">
+        <objectName Type="QString">NodeGraphView</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{d071628e-4c34-461f-9a11-b4ca3f9389ed}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shapeType Type="int">0</shapeType>
+        <nodeColorTop Type="QString"/>
+        <nodeColorBottom Type="QString"/>
+        <guiNodeClass Type="QString">Dot</guiNodeClass>
+        <m_GuiNode Type="MriNgDotNode">
+         <objectName Type="QString"/>
+         <selected Type="bool">false</selected>
+         <uuidString Type="QString">{b18a5fae-4df5-4d89-a3c7-a6a0c3008c05}</uuidString>
+         <position Type="QPointF">362.45,-1299.52</position>
+        </m_GuiNode>
+        <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+        <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
+       </NodeGraphView>
+       <GLSL Type="MriSnBaseGlslContext">
+        <objectName Type="QString">GLSL</objectName>
+        <selected Type="bool">false</selected>
+        <uuidString Type="QString">{c3067888-52c0-4eeb-8182-93f0c6180efa}</uuidString>
+        <tags Type="QStringList"/>
+        <inputTags Type="QStringList"/>
+        <shaderType Type="uint">0</shaderType>
+        <Expression TypeFlags="0" Enabled="true" Visible="true" Min="" Saved="true" Tweakable="true" Undoable="true" Type="QString" Reset="" AttribName="Expression" GroupHints="1" PrettyName="" ItemList="" Step="" Description="" Flags="27" Removeable="false" Default="" Max="">
+                    Output = #Input;
+                    </Expression>
+        <m_defaultInputMap Size="1" map0="Input:0:vec4(0,0,0,0)" Type="QString" ContainerType="QHash"/>
+       </GLSL>
+       <m_input2node Size="1" map0="Input:{ca3459fb-3d7f-4ab7-98cd-10112fb1a61a}:Output" Type="QString" ContainerType="QHash"/>
+       <m_PrettyInputNameMap Size="4" Input="" Type="QString" ContainerType="QHash"/>
        <m_PrettyOutputNameMap Size="4" Type="QString" ContainerType="QHash" Output=""/>
        <m_outputPoints Size="1" Type="QString" outputPoint0="Output" ContainerType="QVector"/>
        <m_Snapshots Size="0" Type="MriSnapshot" ContainerType="QVector"/>
@@ -3110,7 +3619,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
     <NodeGraphView Type="MriSnGroupNodeGraphViewContext">
      <objectName Type="QString">NodeGraphView</objectName>
      <selected Type="bool">false</selected>
-     <uuidString Type="QString">{d74dc64b-d2bb-4145-8548-27cf6f6a6512}</uuidString>
+     <uuidString Type="QString">{804e8575-1927-4ac4-bbe6-ef457bea1b3a}</uuidString>
      <tags Type="QStringList"/>
      <inputTags Type="QStringList"/>
      <shapeType Type="int">4</shapeType>
@@ -3118,9 +3627,9 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
      <nodeColorBottom Type="QString"/>
      <m_GuiNode Type="MriNgTextNode">
       <objectName Type="QString">Edge Wear</objectName>
-      <selected Type="bool">false</selected>
-      <uuidString Type="QString">{36964ac6-c3f0-43dc-8439-7648651621e8}</uuidString>
-      <position Type="QPointF">1.72941e+06,-5729.07</position>
+      <selected Type="bool">true</selected>
+      <uuidString Type="QString">{8495c0c1-8e9f-43cf-8871-a3167765f836}</uuidString>
+      <position Type="QPointF">1.72921e+06,-5733.23</position>
      </m_GuiNode>
      <m_inputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
      <m_outputNodeInitialPos Size="0" Type="QString" ContainerType="QHash"/>
@@ -3128,7 +3637,7 @@ lx.eval('channel.value 1.0 channel:{%s:Mask.A}' % groupId)
     <GLSL Type="MriSnGroupGlslContext">
      <objectName Type="QString">GLSL</objectName>
      <selected Type="bool">false</selected>
-     <uuidString Type="QString">{ef469608-55fc-489d-ad9a-82791c968207}</uuidString>
+     <uuidString Type="QString">{bd30ea22-ac01-4028-805e-a3ed21a7fdf3}</uuidString>
      <tags Type="QStringList"/>
      <inputTags Type="QStringList"/>
      <shaderType Type="uint">0</shaderType>
