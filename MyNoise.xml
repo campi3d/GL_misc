@@ -1,0 +1,50 @@
+<Node>
+  <DefaultName>MyNoise</DefaultName>
+  <Description>Basic Perlin Noise</Description>
+  <Cost>0.05</Cost>
+  <ID>MY_CUSTOM_NOISE</ID>
+  <CostDescription>Texture reads</CostDescription>
+  <Inputs>
+    <Input Name="Position"/>
+  </Inputs>
+  <Attributes>
+    <Attribute Name="TestLocatorListMatrix" Type="LocatorList" LocatorType="MATRIX"></Attribute>
+    <Attribute Name="TestLocatorListScale" Type="LocatorList" LocatorType="Scale"></Attribute>
+    <Attribute Name="TestLocatorListTranslation" Type="LocatorList" LocatorType="Translation"></Attribute>
+    <Attribute Name="TestLocatorListRotation" Type="LocatorList" LocatorType="Rotation"></Attribute>
+    <Attribute Name="Size" Group="" Type="double" Min="0" Max="2">0.5</Attribute>
+    <Attribute Name="colorA" PrettyName="Color A" Group="Color" Type="color" Min="(0,0,0,1)" Max="(1,1,1,1)">(1,1,1,1)</Attribute>
+    <Attribute Name="colorB" PrettyName="Color B" Group="Color" Type="color" Min="(0,0,0,1)" Max="(1,1,1,1)">(0,0,0,1)</Attribute>
+  </Attributes>
+    <Contexts>
+        <Context Type="NodeGraphView">
+        </Context>
+        <Context Type="GLSL">
+            <Shader ShaderType='Fragment'>
+                <Inputs>
+                    <Input Name="Position"> <Default>State.Position</Default> </Input>
+                </Inputs>
+            </Shader>
+            <Shader ShaderType='TessEvaluation'>
+                <Inputs>
+                    <Input Name="Position"> <Default>State.Position</Default> </Input>
+                </Inputs>
+            </Shader>
+            <Shader>
+                <Body><![CDATA[
+    vec4 position = vec4(#Position.xyz,1.0);
+    position.xyz = position.xyz * $TestLocatorListScale;
+    position = $TestLocatorListRotation * position;
+    position.xyz = $TestLocatorListTranslation + position.xyz;
+    vec3 seed = ($TestLocatorListMatrix * position).xyz;
+    float size_pow = (pow(10000.0,$Size*$Size)-1.0) + 0.0001;
+    vec3 scaled_seed = seed / size_pow;
+    float noise_val = noise(scaled_seed);
+    noise_val = noise_val*0.5 + 0.5;
+    Output = mix($colorB,$colorA,noise_val);
+                ]]></Body>
+            </Shader>
+        </Context>
+    </Contexts>
+</Node>
+
