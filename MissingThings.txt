@@ -1,3 +1,9 @@
 Missing things in API
 
 - selected() signal for nodes. Should be emited whenever a selection is made and return the selected node
+- Ever since the context sensitive shortcut system was introduced none of the mari.actions method cover them.
+  For example you might set a shortcut for an action in context Nodegraph.
+  But when you then query the action with action.shortcuts() you do not receive the shortcut that is set. Just an empty list.
+  Ideally it should work this way:
+  - be able to set a shortcut for a context or for global
+  - shortcut in use should tell you which context it is in etc.
