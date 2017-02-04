@@ -1,0 +1,3 @@
+Missing things in API
+
+- selected() signal for nodes. Should be emited whenever a selection is made and return the selected node
