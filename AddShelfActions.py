@@ -1,4 +1,3 @@
-
 import os
 import json
 
@@ -28,7 +27,7 @@ def generateMSHFile():
                 pass
             else:
                 imgpath = os.path.join(absPath + os.sep + img)
-                actionstring = actionstring + '<Action m_ActionSources_key="' + str(key) + '" Data="'+ imgpath + '" ActionType="Mari/MriImagePath" Type="QPair&lt; QString, QString>" Label="' + img + '"></Action>'
+                actionstring = actionstring + '<Action m_ActionSources_key="' + str(key) + '" Data="'+ "/" +  img + '" ActionType="Mari/MriImagePath" Type="QPair&lt; QString, QString>" Label="' + img + '"></Action>'
 
         fileOutput = beginningOfFile + actionstring + endofFile
 
