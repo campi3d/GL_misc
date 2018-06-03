@@ -28,7 +28,7 @@ def generateMSHFile():
             else:
                 imgpath = os.path.join(absPath + os.sep + img)
                 actionstring = actionstring + '<Action m_ActionSources_key="' + str(key) + '" Data="'+ "/" +  img + '" ActionType="Mari/MriImagePath" Type="QPair&lt; QString, QString>" Label="' + img + '"></Action>'
-
+                key += 1
         fileOutput = beginningOfFile + actionstring + endofFile
 
         with open(mshFilePath, 'w') as file:
